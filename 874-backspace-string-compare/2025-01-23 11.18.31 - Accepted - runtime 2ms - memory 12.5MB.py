@@ -1,0 +1,30 @@
+"""
+LeetCode: 2025 01 23 11.18.31 Accepted Runtime 2ms Memory 12.5mb
+
+Algorithm:
+TODO: Describe your approach here
+
+Time Complexity: O(?)
+Space Complexity: O(?)
+"""
+
+class Solution(object):
+    def backspaceCompare(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        def helper(word):
+
+            result = []
+            for char in word:
+                if char != "#":
+                    result.append(char)
+                else:
+                    if result:
+                        result.pop()
+            return result
+
+        
+        return helper(s) == helper(t)

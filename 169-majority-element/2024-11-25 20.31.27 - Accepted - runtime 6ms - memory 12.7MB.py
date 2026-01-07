@@ -1,0 +1,27 @@
+"""
+LeetCode: 2024 11 25 20.31.27 Accepted Runtime 6ms Memory 12.7mb
+
+Algorithm:
+TODO: Describe your approach here
+
+Time Complexity: O(?)
+Space Complexity: O(?)
+"""
+
+class Solution(object):
+    def majorityElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        hashmap = {}
+
+        for i in nums:
+            
+            if i in hashmap:
+                hashmap[i] += 1
+
+            else:
+                hashmap[i] = 1
+
+        return max(hashmap, key=hashmap.get)

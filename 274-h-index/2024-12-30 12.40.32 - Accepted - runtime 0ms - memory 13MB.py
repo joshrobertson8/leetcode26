@@ -1,0 +1,32 @@
+"""
+LeetCode: 2024 12 30 12.40.32 Accepted Runtime 0ms Memory 13mb
+
+Algorithm:
+TODO: Describe your approach here
+
+Time Complexity: O(?)
+Space Complexity: O(?)
+"""
+
+class Solution(object):
+    def hIndex(self, citations):
+        """
+        :type citations: List[int]
+        :rtype: int
+        """
+        sorted_c = sorted(citations, reverse=True)
+        ranks = {}
+        rank = 1
+        count = 0
+
+        for i in range(len(sorted_c)):
+            
+            ranks[rank] = sorted_c[i]
+            rank += 1
+
+        for value, key in ranks.items():
+            
+            if key >= value:
+                count += 1
+        
+        return count
