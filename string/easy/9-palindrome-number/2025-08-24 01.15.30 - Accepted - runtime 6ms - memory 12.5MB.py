@@ -2,7 +2,7 @@
 LeetCode: 2025 08 24 01.15.30 Accepted Runtime 6ms Memory 12.5mb
 
 Algorithm:
-Process the input directly.
+String comparison: handle negative numbers (not palindromes). Convert number to string, reverse it, and compare with original string. If equal, it's a palindrome. Simple approach using string operations.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

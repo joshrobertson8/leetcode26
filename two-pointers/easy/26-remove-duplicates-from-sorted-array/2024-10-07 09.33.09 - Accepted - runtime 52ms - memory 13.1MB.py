@@ -2,7 +2,7 @@
 LeetCode: 2024 10 07 09.33.09 Accepted Runtime 52ms Memory 13.1MB
 
 Algorithm:
-Iterate through the array once.
+Two pointers for sorted array: use k as write pointer starting at 1 (first element is always unique). Iterate from index 1: if nums[i] != nums[i-1], it's a new unique element, write to nums[k] and increment k. This removes duplicates in-place for sorted arrays, keeping only unique elements. Return k (number of unique elements).
 
 Time Complexity: O(n)
 Space Complexity: O(1)

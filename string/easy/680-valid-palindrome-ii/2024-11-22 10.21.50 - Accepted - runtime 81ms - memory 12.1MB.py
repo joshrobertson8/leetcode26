@@ -2,7 +2,7 @@
 LeetCode: 2024 11 22 10.21.50 Accepted Runtime 81ms Memory 12.1mb
 
 Algorithm:
-Use two pointers moving toward each other.
+Two-pointer with one deletion: use left and right pointers. While characters match, move pointers inward. When mismatch found, check if palindrome can be formed by deleting either left character (check(s, left+1, right)) or right character (check(s, left, right-1)). Helper function check() verifies if substring is palindrome. Return True if original is palindrome or can become one by deleting at most one character.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

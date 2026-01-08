@@ -2,7 +2,7 @@
 LeetCode: 2024 11 13 22.18.04 Accepted Runtime 131ms Memory 41.8MB
 
 Algorithm:
-Use a set for O(1) lookup. Use two pointers moving toward each other.
+Hash set approach: traverse list A and store all nodes in a set. Then traverse list B, checking if each node exists in the set. The first node found in the set is the intersection point. This uses O(n) space but provides O(1) lookup for intersection detection.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

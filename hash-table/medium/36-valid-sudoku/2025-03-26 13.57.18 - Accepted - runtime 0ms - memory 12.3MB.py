@@ -2,7 +2,7 @@
 LeetCode: 2025 03 26 13.57.18 Accepted Runtime 0ms Memory 12.3MB
 
 Algorithm:
-Use nested loops to check all pairs.
+Set-based validation: use three sets of sets - rows, cols, and boxes (3x3 subgrids). Iterate through each cell: if value is '.', skip. Otherwise check if value exists in corresponding row set, column set, or box set. If found in any, sudoku is invalid. Otherwise add to all three sets. Box index calculated as (r // 3) * 3 + c // 3. This validates that no digit repeats in row, column, or 3x3 box.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

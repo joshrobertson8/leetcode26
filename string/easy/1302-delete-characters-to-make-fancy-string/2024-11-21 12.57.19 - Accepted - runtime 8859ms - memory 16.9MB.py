@@ -2,7 +2,7 @@
 LeetCode: 2024 11 21 12.57.19 Accepted Runtime 8859ms Memory 16.9mb
 
 Algorithm:
-Iterate through each index.
+Character tracking: iterate through string, tracking consecutive character count. Start with first character in result. For each subsequent character, if it matches previous, increment count. Otherwise reset count to 1 and update previous. Only append character if count < 3 (allowing at most 2 consecutive identical characters). This removes characters that would create 3+ consecutive identical characters.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

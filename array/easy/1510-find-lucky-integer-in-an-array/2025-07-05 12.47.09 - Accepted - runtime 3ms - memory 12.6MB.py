@@ -2,7 +2,7 @@
 LeetCode: 2025 07 05 12.47.09 Accepted Runtime 3ms Memory 12.6mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Frequency counting: build a frequency map counting occurrences of each number. Then iterate through the array again, checking if each number equals its frequency (lucky number). Track the maximum lucky number found. Return the maximum if found, otherwise -1. A lucky integer is a number that appears exactly that many times in the array.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

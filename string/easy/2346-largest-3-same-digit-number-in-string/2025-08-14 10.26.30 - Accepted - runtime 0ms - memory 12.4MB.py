@@ -2,7 +2,7 @@
 LeetCode: 2025 08 14 10.26.30 Accepted Runtime 0ms Memory 12.4mb
 
 Algorithm:
-Iterate through each index.
+Sliding window of 3: iterate through positions 1 to len-2 (to check 3-character windows). For each position i, check if num[i-1] == num[i] == num[i+1] (three consecutive identical digits). Track maximum digit found in such triplets. If any triplet found, return that digit repeated 3 times. Otherwise return empty string. This finds largest 3-digit number with all same digits.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

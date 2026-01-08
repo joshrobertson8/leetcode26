@@ -2,7 +2,7 @@
 LeetCode: 2025 03 22 23.49.46 Accepted Runtime 0ms Memory 12.4mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup. Dynamic programming with memoization.
+Bijection mapping: split string into words. Check if pattern length matches word count. Build character-to-word mapping: for each pattern character and corresponding word, if character already mapped, verify it maps to same word. If character not mapped, check word isn't already mapped to another character (bijection requirement). If all mappings are valid, pattern matches.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

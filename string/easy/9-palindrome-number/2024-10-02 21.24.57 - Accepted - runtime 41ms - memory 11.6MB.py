@@ -2,7 +2,7 @@
 LeetCode: 2024 10 02 21.24.57 Accepted Runtime 41ms Memory 11.6mb
 
 Algorithm:
-Continue until condition is met.
+Reverse number comparison: handle negative numbers (not palindromes). Reverse the number by extracting digits from right to left: repeatedly take last digit (x % 10), add to reversed number (reversed_x * 10 + last_digit), remove last digit (x // 10). Compare original number with reversed number. If equal, it's a palindrome.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

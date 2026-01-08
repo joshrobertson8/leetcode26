@@ -2,7 +2,7 @@
 LeetCode: 2024 10 02 21.02.54 Accepted Runtime 40ms Memory 11.6mb
 
 Algorithm:
-Reverse the input and compare with original.
+String reversal comparison: convert number to string. Reverse string using slice notation [::-1]. Compare reversed string with original. If equal, number is palindrome. Simple approach using string operations.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

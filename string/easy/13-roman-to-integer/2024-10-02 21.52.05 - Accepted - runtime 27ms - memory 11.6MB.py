@@ -2,7 +2,7 @@
 LeetCode: 2024 10 02 21.52.05 Accepted Runtime 27ms Memory 11.6mb
 
 Algorithm:
-Use two pointers moving toward each other.
+Right-to-left processing: reverse string and process from right to left. Maintain prev to track previous value. For each character, get its value from roman_numerals map. If current < prev, subtract current (handles cases like IV=4, IX=9). Otherwise add current. Update prev. This correctly handles subtractive notation by processing right-to-left and subtracting when smaller value precedes larger.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

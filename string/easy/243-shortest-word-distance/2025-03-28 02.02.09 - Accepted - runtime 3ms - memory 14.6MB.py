@@ -2,7 +2,7 @@
 LeetCode: 2025 03 28 02.02.09 Accepted Runtime 3ms Memory 14.6mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup. Greedy algorithm.
+Single pass tracking: maintain indices one and two for last positions of word1 and word2, initialized to infinity. Iterate through array: when word1 found, update one. When word2 found, update two. After each update, calculate distance abs(two - one) and track minimum. This finds shortest distance by always comparing current positions of both words.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

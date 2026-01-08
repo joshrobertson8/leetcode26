@@ -2,7 +2,7 @@
 LeetCode: 2024 11 14 14.52.31 Accepted Runtime 0ms Memory 12.5MB
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Hash set approach: use a dictionary to track seen elements. Iterate through array, if element not in dictionary, add it and write to nums[k], increment k. This removes duplicates in-place while preserving order. Returns k (number of unique elements). Note: this works for unsorted arrays but uses O(n) space.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

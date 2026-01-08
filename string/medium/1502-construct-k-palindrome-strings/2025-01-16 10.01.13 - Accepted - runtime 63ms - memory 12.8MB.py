@@ -2,7 +2,7 @@
 LeetCode: 2025 01 16 10.01.13 Accepted Runtime 63ms Memory 12.8mb
 
 Algorithm:
-Process the input directly.
+Character frequency analysis: count frequency of each character. Key insight: a palindrome can have at most one character with odd frequency. Count characters with odd frequencies (odd_freq). If string length < k, impossible to form k palindromes. If odd_freq > k, impossible (need at least one palindrome per odd-frequency character). Otherwise possible. This determines if string can be partitioned into k palindromes.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

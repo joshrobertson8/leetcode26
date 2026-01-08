@@ -2,7 +2,7 @@
 LeetCode: 2024 11 04 20.32.04 Accepted Runtime 3ms Memory 11.6mb
 
 Algorithm:
-Build prefix array.
+Character-by-character comparison: iterate through positions of first string. For each position i, check if all strings have same character at i. If any string is shorter (i >= len(j)) or character differs (j[i] != strs[0][i]), return prefix up to i. If all positions match, return entire first string. This finds longest common prefix by comparing character by character.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

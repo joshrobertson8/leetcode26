@@ -2,7 +2,7 @@
 LeetCode: 2024 11 11 20.29.18 Accepted Runtime 2ms Memory 11.7mb
 
 Algorithm:
-Sort the input first. Use nested loops to check all pairs.
+Index mapping: create dictionary mapping each index to its character (indices[i] -> s[i]). Sort the dictionary keys (indices) and concatenate characters in sorted order. This restores the original string by placing each character at its correct position according to the indices array.
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)

@@ -2,7 +2,7 @@
 LeetCode: 2024 11 12 15.05.37 Accepted Runtime 59ms Memory 30.7mb
 
 Algorithm:
-Sort the input first. Use nested loops to check all pairs.
+Sort and rank: sort array to determine order. Build ranking map: iterate through sorted array, increment rank when encountering a new (larger) value. Map each unique value to its rank (1-indexed). Then transform original array by replacing each element with its rank from the map. This assigns ranks based on sorted order, with same values getting same rank.
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)

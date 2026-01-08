@@ -2,7 +2,7 @@
 LeetCode: 2025 01 09 10.03.14 Accepted Runtime 16ms Memory 12.4mb
 
 Algorithm:
-Use nested loops to check all pairs.
+Nested loop comparison: for each pair (i, j) where i < j, check if words[i] is both prefix and suffix of words[j]. Check prefix: str2[:len(str1)] == str1. Check suffix: str2[-len(str1):] == str1. If both conditions true, increment count. This counts how many earlier words are both prefix and suffix of later words.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

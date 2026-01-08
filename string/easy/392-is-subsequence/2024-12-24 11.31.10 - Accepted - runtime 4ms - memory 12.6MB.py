@@ -2,7 +2,7 @@
 LeetCode: 2024 12 24 11.31.10 Accepted Runtime 4ms Memory 12.6mb
 
 Algorithm:
-Iterate until condition is met.
+Two-pointer matching: use pointer a for s and b for t. While both pointers valid, if s[a] == t[b], advance a (found character from s). Always advance b. After loop, if a == len(s), all characters of s were found in order in t (subsequence exists). This checks if s is subsequence of t by matching characters in order.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

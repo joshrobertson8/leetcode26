@@ -2,7 +2,7 @@
 LeetCode: 2025 03 20 17.03.24 Accepted Runtime 39ms Memory 13.5mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Character frequency counting: build frequency map of characters in magazine. Then iterate through ransomNote: for each character, check if it exists in map with count > 0. If not found or count is 0, cannot construct ransom note, return False. Otherwise decrement count. If all characters can be used, return True. This checks if magazine contains enough of each character needed for ransom note.
 
 Time Complexity: O(n)
 Space Complexity: O(n)
