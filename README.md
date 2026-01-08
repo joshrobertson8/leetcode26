@@ -1,174 +1,131 @@
 # 🏆 LeetCode Solutions Repository
 
-This repository contains **120+ LeetCode problems** organized according to **LeetCode's official categories** with **multiple solution approaches** showcasing optimization journeys and different algorithmic techniques.
+A comprehensive collection of LeetCode solutions organized by category and difficulty, with automatic syncing from LeetCode.com.
 
-## 📊 Repository Statistics
+## 🚀 Quick Start
 
-- **Total Problems**: 120
-- **Total Solutions**: 254+ (multiple solutions per problem)
-- **Problems with Multiple Solutions**: 59 (49.2% of all problems)
-- **Categories**: 11 official LeetCode categories
-- **Difficulties**: Easy (77), Medium (43)
+### Automatic Sync (Recommended)
 
-## 🎯 Multiple Solutions Approach
+Simply run the sync script - it automatically extracts cookies from your browser and syncs all your accepted solutions:
 
-### Why Multiple Solutions?
+```bash
+python3 leetcode_sync.py
+```
 
-This repository preserves **the journey of optimization** - showing how solutions evolve from initial working code to optimized implementations. Each timestamped solution demonstrates:
+**First time?** The script will automatically:
+1. Extract cookies from your browser (Chrome, Firefox, Safari, Edge, Opera, or Brave)
+2. Authenticate with LeetCode
+3. Download all your accepted solutions
+4. Organize them into the correct category/difficulty folders
+5. Save cookies for future use (no need to authenticate again)
 
-- **Performance improvements** (runtime and memory optimization)
-- **Different algorithmic approaches** (brute force → optimal)
-- **Learning progression** over time
-- **Various techniques** for the same problem
+**Subsequent runs:** Just run `python3 leetcode_sync.py` - fully automatic, zero interaction needed!
 
-### Solution Distribution
+### Manual Options
 
-| Solutions Count | Problems | Examples |
-|----------------|----------|----------|
-| **13 solutions** | 1 problem | Two Sum (showing evolution from O(n²) to O(n)) |
-| **9 solutions** | 1 problem | Valid Parentheses (different stack implementations) |
-| **7 solutions** | 1 problem | Remove Element (various two-pointer approaches) |
-| **6 solutions** | 2 problems | Duplicate Zeros, Palindrome Number |
-| **5 solutions** | 5 problems | Fruit Into Baskets, Rank Transform, etc. |
-| **2-4 solutions** | 50 problems | Most problems showing 2-3 different approaches |
+```bash
+# Specify a browser
+python3 leetcode_sync.py --browser chrome
 
-### 🚀 Top Optimization Examples
+# Pass cookies directly
+python3 leetcode_sync.py --cookies "LEETCODE_SESSION=...; csrftoken=..."
 
-1. **Two Sum**: 2199ms → 0ms (100% improvement) + added hash map approach
-2. **Valid Palindrome**: 982ms → 8ms (99.2% improvement) 
-3. **Remove Duplicates**: 52ms → 0ms (100% improvement) + memory optimization
-4. **Container With Most Water**: Multiple two-pointer implementations
-5. **Majority Element**: Added both hash map and voting algorithm approaches
+# Limit number of submissions
+python3 leetcode_sync.py --max 100
+
+# Force re-download all solutions
+python3 leetcode_sync.py --force
+```
+
+### Installation
+
+```bash
+pip3 install -r requirements.txt
+```
 
 ## 📁 Repository Structure
 
-### Official LeetCode Categories
+Solutions are automatically organized into LeetCode's official categories:
 
 ```
-├── array/                    # 65 problems (most common)
-│   ├── easy/                # Two Sum, Merge Sorted Array, etc.
-│   └── medium/              # 3Sum, Product Except Self, etc.
-├── string/                   # 27 problems  
-│   ├── easy/                # Palindrome, Anagram, etc.
-│   └── medium/              # Group Anagrams, Reverse Words, etc.
-├── linked-list/             # 8 problems
-│   ├── easy/                # Reverse, Merge, Cycle Detection
-│   └── medium/              # Swap Nodes in Pairs
-├── tree/                    # 5 problems
-│   └── easy/                # Max Depth, Invert, Path Sum
-├── dynamic-programming/     # 4 problems
-│   ├── easy/                # Climbing Stairs, Best Time to Buy
-│   └── medium/              # Best Time to Buy II
-├── backtracking/           # 3 problems
-│   └── medium/             # Permutations, Combinations
-├── math/                   # 3 problems
-│   └── easy/               # Happy Number, Power of Three
-├── bit-manipulation/       # 2 problems
-│   ├── easy/               # Single Number
-│   └── medium/             # Reordered Power of 2
-├── sliding-window/         # 1 problem
-│   └── medium/             # Fruit Into Baskets
-├── binary-search/          # 1 problem
-│   └── easy/               # Binary Search
-└── graph/                  # 1 problem
-    └── medium/             # Number of Islands
+├── array/
+│   ├── easy/
+│   └── medium/
+├── string/
+│   ├── easy/
+│   └── medium/
+├── hash-table/
+├── linked-list/
+├── tree/
+├── dynamic-programming/
+├── backtracking/
+├── graph/
+├── binary-search/
+├── heap/
+├── trie/
+├── stack/
+├── sliding-window/
+├── two-pointers/
+├── bit-manipulation/
+├── math/
+├── greedy/
+├── sorting/
+└── design/
 ```
-
-### Problem Directory Structure
 
 Each problem follows this structure:
 ```
 category/difficulty/problem-name/
-├── problem-name.txt                    # Plain English problem statement
+├── problem-name.txt                    # Problem statement
 ├── YYYY-MM-DD HH.MM.SS - Solution1.py # Timestamped solutions
-├── YYYY-MM-DD HH.MM.SS - Solution2.py # showing progression
-└── YYYY-MM-DD HH.MM.SS - SolutionN.py # and optimization
+└── YYYY-MM-DD HH.MM.SS - Solution2.py # Multiple solutions preserved
 ```
 
-## 🔍 How to Use This Repository
+## 🎯 Features
 
-### 1. **Study by Category**
-Focus on specific algorithmic patterns:
-- **Arrays & Strings**: Most fundamental problems (92 total)
-- **Dynamic Programming**: Classic DP patterns
-- **Trees**: Essential tree traversal and manipulation
-- **Linked Lists**: Pointer manipulation techniques
+- ✅ **Fully automatic syncing** - No manual setup needed
+- ✅ **Multiple solutions preserved** - All versions of your solutions are kept
+- ✅ **Automatic organization** - Solutions sorted by category and difficulty
+- ✅ **Problem statements** - Automatically downloads problem descriptions
+- ✅ **Performance tracking** - Runtime and memory usage in filenames
+- ✅ **Duplicate prevention** - Skips existing solutions automatically
 
-### 2. **Learn from Multiple Solutions**
-For problems with multiple solutions:
-- Start with the **earliest solution** (often brute force)
-- Progress through **chronological improvements**
-- Compare **runtime and memory optimizations**
-- Understand **different algorithmic approaches**
+## 📊 Statistics
 
-### 3. **Interview Preparation**
-- **Easy problems** (77): Master these first for coding interviews
-- **Medium problems** (43): Practice for advanced positions
-- **Multiple approaches**: Be ready to discuss trade-offs
+- **Total Problems**: 150+
+- **Total Solutions**: 300+ (multiple solutions per problem)
+- **Categories**: 18 official LeetCode categories
+- **Difficulties**: Easy, Medium, Hard
 
-## 🏅 Optimization Highlights
+## 🔧 How It Works
 
-### Runtime Improvements
-- **Two Sum**: O(n²) → O(n) with hash map
-- **Valid Palindrome**: 982ms → 8ms (string preprocessing)
-- **Binary Search**: Direct implementation improvements
+1. **Authentication**: Extracts LeetCode session cookies from your browser automatically
+2. **Fetching**: Uses LeetCode's GraphQL API to get all accepted submissions
+3. **Organization**: Categorizes problems using LeetCode's topic tags and problem metadata
+4. **Storage**: Saves solutions with timestamps, runtime, and memory metrics
 
-### Memory Optimizations  
-- **Fruit Into Baskets**: 17.1MB → 16.4MB (sliding window refinement)
-- **Remove Duplicates**: Space-optimized in-place algorithms
+## 📝 Notes
 
-### Algorithmic Evolution
-- **Hash Map adoption**: Multiple problems show progression to hash-based solutions
-- **Two Pointers**: Refinement of pointer manipulation techniques
-- **Stack optimization**: Better stack implementations for parsing problems
+- Cookies are saved to `.leetcode_config.json` (gitignored for security)
+- Solutions are organized exactly as they appear on LeetCode
+- Multiple solutions for the same problem are all preserved
+- Problem statements are converted from HTML to plain text
 
-## 📚 Learning Path Recommendation
+## 🛠 Troubleshooting
 
-### Beginner (Start Here)
-1. **Array basics**: Two Sum, Remove Duplicates, Merge Sorted Array
-2. **String fundamentals**: Palindrome, Anagram, Valid Parentheses  
-3. **Linked List basics**: Reverse, Merge, Cycle Detection
+**Can't extract cookies?**
+- Make sure you're logged into LeetCode in at least one browser
+- Try specifying a browser: `--browser chrome`
+- Or use manual setup: `--setup`
 
-### Intermediate
-1. **Two Pointers**: Container With Most Water, 3Sum
-2. **Dynamic Programming**: Climbing Stairs, Best Time to Buy Stock
-3. **Tree Traversal**: Inorder, Max Depth, Invert Binary Tree
+**Authentication failed?**
+- Cookies may have expired - run `--setup` to update them
+- Or pass cookies directly with `--cookies`
 
-### Advanced  
-1. **Backtracking**: Permutations, Combinations
-2. **Graph algorithms**: Number of Islands
-3. **Complex optimizations**: Study multiple solution approaches
-
-## 🛠 Solution Evolution Analysis
-
-This repository includes `analyze_solutions.py` which provides insights into:
-- Problems with the most solution variations
-- Performance improvement patterns
-- Algorithmic technique adoption over time
-- Learning progression tracking
-
-Run analysis:
-```bash
-python analyze_solutions.py
-```
-
-## 🎯 Key Features
-
-- ✅ **Official LeetCode categories** (matches LeetCode.com exactly)
-- ✅ **Multiple solutions preserved** (49.2% of problems have 2+ solutions)
-- ✅ **Plain text problem statements** (converted from HTML)
-- ✅ **Chronological optimization tracking** (timestamped solutions)
-- ✅ **Performance metrics** (runtime and memory in filenames)
-- ✅ **Complete solution evolution** (from initial to optimized)
-
-## 📈 Success Metrics
-
-- **254+ total solutions** across 120 problems
-- **Demonstrable optimization patterns** with quantified improvements
-- **Comprehensive coverage** of fundamental algorithms and data structures
-- **Multiple approaches** showing different ways to solve the same problem
-- **Real learning progression** captured through timestamped iterations
+**Missing solutions?**
+- Use `--force` to re-download everything
+- Increase `--max` to fetch more submissions
 
 ---
 
-*This repository showcases not just the final solutions, but the complete journey of learning and optimization - making it an invaluable resource for understanding how to approach, solve, and improve algorithmic solutions over time.*
+*Automatically synced from LeetCode.com - Just run `python3 leetcode_sync.py`!*

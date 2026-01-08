@@ -154,3 +154,6 @@ tmp/
 cookies.txt
 .cookies
 *.cookie
+
+# LeetCode sync config (contains credentials)
+.leetcode_config.json
