@@ -2,7 +2,7 @@
 LeetCode: 2024 11 09 20.11.46 Accepted Runtime 15ms Memory 11.6mb
 
 Algorithm:
-TODO: Describe your approach here
+Continue while window is valid.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

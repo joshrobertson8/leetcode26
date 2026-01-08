@@ -2,9 +2,9 @@
 LeetCode: 2025 12 21 12.49.43 Accepted Runtime 101ms Memory 19.3MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a set for O(1) lookup. Use a recursive helper function to explore all possibilities.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(n)
 """
 

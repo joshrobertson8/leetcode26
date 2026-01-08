@@ -4,7 +4,7 @@ LeetCode: 2025 07 03 08.53.36 Accepted Runtime 25ms Memory 12.4mb
 Algorithm:
 Iterate through the array once.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(1)
 """
 

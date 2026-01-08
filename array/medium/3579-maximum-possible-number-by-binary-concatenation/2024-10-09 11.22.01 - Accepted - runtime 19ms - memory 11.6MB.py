@@ -5,9 +5,9 @@ Problem:
 import itertools
 
 Algorithm:
-TODO: Describe your approach here
+Process the input directly.
 
-Time Complexity: O(log n)
+Time Complexity: O(1)
 Space Complexity: O(1)
 """
 

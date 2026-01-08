@@ -2,9 +2,9 @@
 LeetCode: 2025 08 04 17.34.14 Accepted Runtime 215ms Memory 16.4MB
 
 Algorithm:
-TODO: Describe your approach here
+Use sliding window to track a valid subarray.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(n)
 """
 

@@ -2,7 +2,7 @@
 LeetCode: 2025 01 09 10.14.22 Accepted Runtime 0ms Memory 12.6mb
 
 Algorithm:
-TODO: Describe your approach here
+Iterate through words.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

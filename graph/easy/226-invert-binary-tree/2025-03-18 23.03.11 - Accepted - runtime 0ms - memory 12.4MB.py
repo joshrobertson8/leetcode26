@@ -2,9 +2,9 @@
 LeetCode: 2025 03 18 23.03.11 Accepted Runtime 0ms Memory 12.4MB
 
 Algorithm:
-TODO: Describe your approach here
+Recursively process each element.
 
-Time Complexity: O(log n)
+Time Complexity: O(1)
 Space Complexity: O(1)
 """
 

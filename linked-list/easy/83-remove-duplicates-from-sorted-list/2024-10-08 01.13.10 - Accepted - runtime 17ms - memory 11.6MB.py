@@ -9,10 +9,10 @@ self.val = val
 self.next = next
 
 Algorithm:
-TODO: Describe your approach here
+Continue while window is valid.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class Solution(object):

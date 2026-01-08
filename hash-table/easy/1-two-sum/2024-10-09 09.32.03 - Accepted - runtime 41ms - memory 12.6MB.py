@@ -2,7 +2,7 @@
 LeetCode: 2024 10 09 09.32.03 Accepted Runtime 41ms Memory 12.6mb
 
 Algorithm:
-TODO: Describe your approach here
+Use a hash map to track seen values. Use nested loops to check all pairs.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

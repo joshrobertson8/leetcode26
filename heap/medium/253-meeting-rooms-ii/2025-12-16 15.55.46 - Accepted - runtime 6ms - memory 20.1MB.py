@@ -2,10 +2,10 @@
 LeetCode: 2025 12 16 15.55.46 Accepted Runtime 6ms Memory 20.1MB
 
 Algorithm:
-TODO: Describe your approach here
+Sort the input first. Use two pointers moving toward each other.
 
 Time Complexity: O(n log n)
-Space Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class Solution:

@@ -4,7 +4,7 @@ LeetCode: 2025 12 17 13.27.35 Accepted Runtime 273ms Memory 28.3MB
 Algorithm:
 Use a hash table to store seen elements for O(1) lookup. DFS traversal.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(n)
 """
 

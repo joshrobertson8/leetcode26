@@ -4,7 +4,7 @@ LeetCode: 2026 01 04 16.26.34 Accepted Runtime 7ms Memory 17.2MB
 Algorithm:
 Use a hash table to store seen elements for O(1) lookup.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(n)
 """
 

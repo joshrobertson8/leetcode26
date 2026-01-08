@@ -4,7 +4,7 @@ LeetCode: 2026 01 06 11.18.52 Accepted Runtime 11ms Memory 20MB
 Algorithm:
 DFS traversal.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(n)
 """
 

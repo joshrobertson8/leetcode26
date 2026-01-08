@@ -2,7 +2,7 @@
 LeetCode: 2025 07 14 12.42.04 Accepted Runtime 3ms Memory 12.4MB
 
 Algorithm:
-TODO: Describe your approach here
+Traverse the linked list.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

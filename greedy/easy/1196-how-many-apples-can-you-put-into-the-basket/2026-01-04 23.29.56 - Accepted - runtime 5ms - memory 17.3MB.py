@@ -2,10 +2,10 @@
 LeetCode: 2026 01 04 23.29.56 Accepted Runtime 5ms Memory 17.3MB
 
 Algorithm:
-TODO: Describe your approach here
+Sort the input first. Use sliding window to track a valid subarray.
 
 Time Complexity: O(n log n)
-Space Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class Solution:

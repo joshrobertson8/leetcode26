@@ -2,7 +2,7 @@
 LeetCode: 2025 08 24 01.08.34 Accepted Runtime 0ms Memory 12.8mb
 
 Algorithm:
-TODO: Describe your approach here
+Iterate backwards through the array.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

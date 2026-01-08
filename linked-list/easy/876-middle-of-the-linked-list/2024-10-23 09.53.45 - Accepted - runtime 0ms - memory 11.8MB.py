@@ -2,7 +2,7 @@
 LeetCode: 2024 10 23 09.53.45 Accepted Runtime 0ms Memory 11.8MB
 
 Algorithm:
-TODO: Describe your approach here
+Use two pointers moving toward each other.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

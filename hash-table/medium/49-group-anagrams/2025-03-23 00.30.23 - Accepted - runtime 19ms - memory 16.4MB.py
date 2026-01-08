@@ -2,7 +2,7 @@
 LeetCode: 2025 03 23 00.30.23 Accepted Runtime 19ms Memory 16.4mb
 
 Algorithm:
-TODO: Describe your approach here
+Sort the input first.
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)

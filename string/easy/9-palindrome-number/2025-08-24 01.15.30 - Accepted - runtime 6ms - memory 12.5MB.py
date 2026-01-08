@@ -2,7 +2,7 @@
 LeetCode: 2025 08 24 01.15.30 Accepted Runtime 6ms Memory 12.5mb
 
 Algorithm:
-TODO: Describe your approach here
+Process the input directly.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

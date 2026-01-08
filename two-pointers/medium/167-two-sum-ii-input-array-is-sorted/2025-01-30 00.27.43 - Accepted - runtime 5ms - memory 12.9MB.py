@@ -5,7 +5,7 @@ Algorithm:
 Iterate until condition is met.
 
 Time Complexity: O(n)
-Space Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class Solution(object):

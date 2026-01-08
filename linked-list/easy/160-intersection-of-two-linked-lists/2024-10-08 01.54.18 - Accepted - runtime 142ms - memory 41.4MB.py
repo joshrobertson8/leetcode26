@@ -2,7 +2,7 @@
 LeetCode: 2024 10 08 01.54.18 Accepted Runtime 142ms Memory 41.4MB
 
 Algorithm:
-TODO: Describe your approach here
+Continue until condition is met.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

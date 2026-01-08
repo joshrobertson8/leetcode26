@@ -2,10 +2,10 @@
 LeetCode: 2025 12 19 15.17.20 Accepted Runtime 880ms Memory 52.7MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a recursive helper function to explore all possibilities.
 
-Time Complexity: O(m)
-Space Complexity: O(m)
+Time Complexity: O(n^2)
+Space Complexity: O(n)
 """
 
 class WordDictionary:

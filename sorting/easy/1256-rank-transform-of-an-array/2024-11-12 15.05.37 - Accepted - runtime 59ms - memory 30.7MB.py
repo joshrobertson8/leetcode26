@@ -2,7 +2,7 @@
 LeetCode: 2024 11 12 15.05.37 Accepted Runtime 59ms Memory 30.7mb
 
 Algorithm:
-TODO: Describe your approach here
+Sort the input first. Use nested loops to check all pairs.
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)

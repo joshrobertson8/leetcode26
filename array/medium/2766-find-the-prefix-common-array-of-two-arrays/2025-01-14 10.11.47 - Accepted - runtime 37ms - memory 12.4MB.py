@@ -4,8 +4,8 @@ LeetCode: 2025 01 14 10.11.47 Accepted Runtime 37ms Memory 12.4mb
 Algorithm:
 Build prefix array.
 
-Time Complexity: O(n²)
-Space Complexity: O(n)
+Time Complexity: O(n^2)
+Space Complexity: O(1)
 """
 
 class Solution(object):

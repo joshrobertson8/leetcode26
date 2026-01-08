@@ -2,9 +2,9 @@
 LeetCode: 2025 09 25 23.48.27 Accepted Runtime 233ms Memory 31.3MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a set for O(1) lookup. Use nested loops to check all pairs.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(n)
 """
 

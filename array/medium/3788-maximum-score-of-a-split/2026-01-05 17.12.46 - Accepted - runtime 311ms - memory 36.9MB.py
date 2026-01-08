@@ -2,10 +2,10 @@
 LeetCode: 2026 01 05 17.12.46 Accepted Runtime 311ms Memory 36.9MB
 
 Algorithm:
-TODO: Describe your approach here
+Make two passes: forward then backward.
 
 Time Complexity: O(n)
-Space Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class Solution:

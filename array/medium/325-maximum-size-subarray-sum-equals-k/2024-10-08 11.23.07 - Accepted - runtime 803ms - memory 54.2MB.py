@@ -2,7 +2,7 @@
 LeetCode: 2024 10 08 11.23.07 Accepted Runtime 803ms Memory 54.2mb
 
 Algorithm:
-TODO: Describe your approach here
+Use a hash map to track seen values.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

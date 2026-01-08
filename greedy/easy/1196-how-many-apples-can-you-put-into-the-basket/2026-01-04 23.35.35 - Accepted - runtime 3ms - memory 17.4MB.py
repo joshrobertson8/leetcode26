@@ -2,7 +2,7 @@
 LeetCode: 2026 01 04 23.35.35 Accepted Runtime 3ms Memory 17.4MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a heap to always get the smallest/largest element.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

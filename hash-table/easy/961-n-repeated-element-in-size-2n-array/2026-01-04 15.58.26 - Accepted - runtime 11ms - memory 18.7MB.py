@@ -2,7 +2,7 @@
 LeetCode: 2026 01 04 15.58.26 Accepted Runtime 11ms Memory 18.7MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a Counter to count frequencies.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

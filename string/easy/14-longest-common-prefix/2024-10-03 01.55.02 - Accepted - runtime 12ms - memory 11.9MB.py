@@ -4,7 +4,7 @@ LeetCode: 2024 10 03 01.55.02 Accepted Runtime 12ms Memory 11.9mb
 Algorithm:
 Build prefix array.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(1)
 """
 

@@ -4,8 +4,8 @@ LeetCode: 2025 07 10 14.25.23 Accepted Runtime 0ms Memory 12.3MB
 Algorithm:
 Two pointers approach.
 
-Time Complexity: O(log n)
-Space Complexity: O(1)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 # Definition for a binary tree node.

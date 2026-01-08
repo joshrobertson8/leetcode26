@@ -2,10 +2,10 @@
 LeetCode: 2026 01 01 14.43.00 Accepted Runtime 227ms Memory 49.3MB
 
 Algorithm:
-TODO: Describe your approach here
+Use two pointers moving toward each other.
 
 Time Complexity: O(n)
-Space Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class SnapshotArray:

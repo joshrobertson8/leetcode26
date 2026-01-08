@@ -2,7 +2,7 @@
 LeetCode: 2025 07 14 08.29.41 Accepted Runtime 0ms Memory 12.6MB
 
 Algorithm:
-TODO: Describe your approach here
+Use nested loops to check all pairs.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

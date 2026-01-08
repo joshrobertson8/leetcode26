@@ -2,9 +2,9 @@
 LeetCode: 2025 07 31 14.11.04 Accepted Runtime 476ms Memory 36.7mb
 
 Algorithm:
-TODO: Describe your approach here
+Use a set for O(1) lookup. Use two pointers moving toward each other.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(n)
 """
 

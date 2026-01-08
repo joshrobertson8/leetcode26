@@ -2,7 +2,7 @@
 LeetCode: 2025 06 13 13.53.00 Accepted Runtime 0ms Memory 12.6mb
 
 Algorithm:
-TODO: Describe your approach here
+Iterate through clean.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

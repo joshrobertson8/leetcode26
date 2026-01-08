@@ -4,8 +4,8 @@ LeetCode: 2025 12 21 14.05.27 Accepted Runtime 543ms Memory 42.3MB
 Algorithm:
 Dynamic programming with memoization. Greedy algorithm.
 
-Time Complexity: O(n²)
-Space Complexity: O(n)
+Time Complexity: O(n^2)
+Space Complexity: O(1)
 """
 
 class Solution:

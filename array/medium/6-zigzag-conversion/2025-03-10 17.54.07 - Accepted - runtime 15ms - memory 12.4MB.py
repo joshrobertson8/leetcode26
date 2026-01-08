@@ -2,10 +2,10 @@
 LeetCode: 2025 03 10 17.54.07 Accepted Runtime 15ms Memory 12.4mb
 
 Algorithm:
-TODO: Describe your approach here
+Iterate through each character.
 
 Time Complexity: O(n)
-Space Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class Solution(object):

@@ -2,10 +2,10 @@
 LeetCode: 2025 10 07 02.18.57 Accepted Runtime 0ms Memory 26MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a recursive helper function to explore all possibilities.
 
-Time Complexity: O(log n)
-Space Complexity: O(1)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 class Solution:

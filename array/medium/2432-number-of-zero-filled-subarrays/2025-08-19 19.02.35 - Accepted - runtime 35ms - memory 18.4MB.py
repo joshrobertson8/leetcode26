@@ -2,7 +2,7 @@
 LeetCode: 2025 08 19 19.02.35 Accepted Runtime 35ms Memory 18.4mb
 
 Algorithm:
-TODO: Describe your approach here
+Iterate through nums.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

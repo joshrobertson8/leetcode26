@@ -2,9 +2,9 @@
 LeetCode: 2025 12 17 00.16.40 Accepted Runtime 0ms Memory 18.1MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a set for O(1) lookup.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(n)
 """
 

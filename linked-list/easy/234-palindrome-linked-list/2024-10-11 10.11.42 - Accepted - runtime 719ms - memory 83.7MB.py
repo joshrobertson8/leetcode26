@@ -9,10 +9,10 @@ self.val = val
 self.next = next
 
 Algorithm:
-TODO: Describe your approach here
+Traverse the linked list to collect values into an array, then compare with its reverse.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 class Solution(object):

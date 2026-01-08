@@ -2,7 +2,7 @@
 LeetCode: 2024 10 30 09.38.44 Accepted Runtime 1027ms Memory 13mb
 
 Algorithm:
-TODO: Describe your approach here
+Clean the string by removing non-alphanumeric characters, then compare with its reverse.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

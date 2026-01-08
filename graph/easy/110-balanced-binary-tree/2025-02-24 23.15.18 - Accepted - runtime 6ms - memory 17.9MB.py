@@ -2,10 +2,10 @@
 LeetCode: 2025 02 24 23.15.18 Accepted Runtime 6ms Memory 17.9MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a recursive helper function to explore all possibilities.
 
-Time Complexity: O(log n)
-Space Complexity: O(1)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 # Definition for a binary tree node.

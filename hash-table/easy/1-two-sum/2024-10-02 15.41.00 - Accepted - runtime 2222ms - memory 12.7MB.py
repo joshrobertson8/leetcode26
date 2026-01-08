@@ -2,10 +2,10 @@
 LeetCode: 2024 10 02 15.41.00 Accepted Runtime 2222ms Memory 12.7mb
 
 Algorithm:
-TODO: Describe your approach here
+Use nested loops to check all pairs.
 
-Time Complexity: O(n²)
-Space Complexity: O(n)
+Time Complexity: O(n^2)
+Space Complexity: O(1)
 """
 
 class Solution(object):

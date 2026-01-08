@@ -2,9 +2,9 @@
 LeetCode: 2026 01 05 15.49.52 Accepted Runtime 8ms Memory 18MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a recursive helper function to explore all possibilities.
 
-Time Complexity: O(n²)
+Time Complexity: O(n^2)
 Space Complexity: O(n)
 """
 

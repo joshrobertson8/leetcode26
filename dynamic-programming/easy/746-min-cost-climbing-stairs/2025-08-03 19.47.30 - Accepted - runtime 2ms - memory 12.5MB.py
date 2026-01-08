@@ -2,10 +2,10 @@
 LeetCode: 2025 08 03 19.47.30 Accepted Runtime 2ms Memory 12.5MB
 
 Algorithm:
-TODO: Describe your approach here
+Iterate through each index.
 
 Time Complexity: O(n)
-Space Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class Solution(object):
