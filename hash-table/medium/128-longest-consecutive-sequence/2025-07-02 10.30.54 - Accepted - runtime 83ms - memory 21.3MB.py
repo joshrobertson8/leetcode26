@@ -2,10 +2,10 @@
 LeetCode: 2025 07 02 10.30.54 Accepted Runtime 83ms Memory 21.3MB
 
 Algorithm:
-TODO: Describe your approach here
+Sort the array first. Greedy algorithm.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n log n)
+Space Complexity: O(n)
 """
 
 class Solution(object):

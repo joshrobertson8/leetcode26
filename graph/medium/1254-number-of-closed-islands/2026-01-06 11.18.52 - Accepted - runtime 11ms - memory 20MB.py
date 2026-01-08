@@ -2,10 +2,10 @@
 LeetCode: 2026 01 06 11.18.52 Accepted Runtime 11ms Memory 20MB
 
 Algorithm:
-TODO: Describe your approach here
+DFS traversal.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n²)
+Space Complexity: O(n)
 """
 
 class Solution:

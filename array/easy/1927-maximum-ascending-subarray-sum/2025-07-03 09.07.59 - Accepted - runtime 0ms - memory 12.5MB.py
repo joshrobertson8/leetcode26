@@ -2,10 +2,10 @@
 LeetCode: 2025 07 03 09.07.59 Accepted Runtime 0ms Memory 12.5mb
 
 Algorithm:
-TODO: Describe your approach here
+Greedy algorithm.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class Solution(object):

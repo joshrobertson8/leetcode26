@@ -4,8 +4,8 @@ LeetCode: 2025 07 10 14.52.32 Accepted Runtime 0ms Memory 12.5MB
 Algorithm:
 TODO: Describe your approach here
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(log n)
+Space Complexity: O(1)
 """
 
 # Definition for a binary tree node.

@@ -4,8 +4,8 @@ LeetCode: 2026 01 04 16.26.08 Accepted Runtime 3ms Memory 18.5MB
 Algorithm:
 TODO: Describe your approach here
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 from collections import Counter

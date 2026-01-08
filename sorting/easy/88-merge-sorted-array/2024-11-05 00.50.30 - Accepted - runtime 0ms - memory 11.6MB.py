@@ -2,10 +2,10 @@
 LeetCode: 2024 11 05 00.50.30 Accepted Runtime 0ms Memory 11.6mb
 
 Algorithm:
-TODO: Describe your approach here
+Sort the array first.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n log n)
+Space Complexity: O(1)
 """
 
 class Solution(object):

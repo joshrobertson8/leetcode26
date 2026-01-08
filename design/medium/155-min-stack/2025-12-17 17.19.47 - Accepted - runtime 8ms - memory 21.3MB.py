@@ -4,8 +4,8 @@ LeetCode: 2025 12 17 17.19.47 Accepted Runtime 8ms Memory 21.3MB
 Algorithm:
 TODO: Describe your approach here
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(1)
+Space Complexity: O(1)
 """
 
 class MinStack:

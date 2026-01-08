@@ -2,10 +2,10 @@
 LeetCode: 2026 01 01 17.49.02 Accepted Runtime 35ms Memory 28.7MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a hash table to store seen elements for O(1) lookup.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 class Solution:

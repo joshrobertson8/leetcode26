@@ -2,10 +2,10 @@
 LeetCode: 2026 01 03 16.58.34 Accepted Runtime 4ms Memory 21.4MB
 
 Algorithm:
-TODO: Describe your approach here
+Greedy algorithm.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n log n)
+Space Complexity: O(n)
 """
 
 class Solution:

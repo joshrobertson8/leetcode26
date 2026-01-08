@@ -676,6 +676,23 @@ Space Complexity: O(?)
         
         solution_file.write_text(code, encoding="utf-8")
         
+        # Automatically analyze and update complexity and description
+        try:
+            # Import here to avoid circular dependencies
+            import sys
+            import importlib.util
+            analyzer_path = BASE_DIR / "analyze_complexity.py"
+            if analyzer_path.exists():
+                spec = importlib.util.spec_from_file_location("analyze_complexity", analyzer_path)
+                analyzer_module = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(analyzer_module)
+                
+                time_comp, space_comp, description = analyzer_module.analyze_solution_file(solution_file)
+                if time_comp != "O(?)" or space_comp != "O(?)":
+                    analyzer_module.update_solution_file(solution_file, time_comp, space_comp, description)
+        except Exception:
+            pass  # Don't fail if complexity analysis fails
+        
         return True, str(solution_file)
 
 
@@ -813,12 +830,26 @@ def sync_solutions(client: LeetCodeClient, organizer: SolutionOrganizer,
     CLI.section("Syncing Solutions")
     
     new_count = 0
+    updated_count = 0
     skipped_count = 0
     failed_count = 0
     saved_files = []
     
     total_problems = len(problem_submissions)
     current = 0
+    
+    # Load analyzer module once
+    analyzer_module = None
+    try:
+        import sys
+        import importlib.util
+        analyzer_path = BASE_DIR / "analyze_complexity.py"
+        if analyzer_path.exists():
+            spec = importlib.util.spec_from_file_location("analyze_complexity", analyzer_path)
+            analyzer_module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(analyzer_module)
+    except Exception:
+        pass
     
     for slug, subs in problem_submissions.items():
         current += 1
@@ -832,16 +863,63 @@ def sync_solutions(client: LeetCodeClient, organizer: SolutionOrganizer,
         for sub in subs:
             timestamp = sub.get("timestamp", 0)
             
-            if not force and organizer.solution_exists(slug, timestamp, existing):
-                skipped_count += 1
-                continue
-            
+            # Always fetch submission details for analysis
             sub_detail = client.get_submission_detail(sub.get("id", ""))
             if not sub_detail:
                 failed_count += 1
                 continue
             
             full_sub = {**sub, **sub_detail}
+            
+            # Check if solution exists
+            solution_exists = organizer.solution_exists(slug, timestamp, existing)
+            
+            if not force and solution_exists:
+                # Update existing file with complexity and description
+                updated = False
+                try:
+                    # Find the existing file
+                    problem_dir_name = None
+                    for dir_name in existing.keys():
+                        if slug in dir_name or dir_name.endswith(f"-{slug}"):
+                            problem_dir_name = dir_name
+                            break
+                    
+                    if problem_dir_name and analyzer_module:
+                        try:
+                            timestamp_int = int(timestamp) if isinstance(timestamp, str) else timestamp
+                            dt = datetime.fromtimestamp(timestamp_int)
+                            date_str = dt.strftime("%Y-%m-%d %H.%M.%S")
+                            
+                            # Find the matching file
+                            for category_dir in BASE_DIR.iterdir():
+                                if not category_dir.is_dir() or category_dir.name.startswith('.'):
+                                    continue
+                                for difficulty_dir in category_dir.iterdir():
+                                    if not difficulty_dir.is_dir():
+                                        continue
+                                    for prob_dir in difficulty_dir.iterdir():
+                                        if prob_dir.name == problem_dir_name:
+                                            for py_file in prob_dir.glob("*.py"):
+                                                if date_str in py_file.name:
+                                                    # Update this file
+                                                    time_comp, space_comp, description = analyzer_module.analyze_solution_file(py_file)
+                                                    if time_comp != "O(?)" or space_comp != "O(?)":
+                                                        analyzer_module.update_solution_file(py_file, time_comp, space_comp, description)
+                                                        updated = True
+                                                    break
+                        except Exception:
+                            pass
+                except Exception:
+                    pass
+                
+                if updated:
+                    updated_count += 1
+                else:
+                    skipped_count += 1
+                continue
+            
+            # Save new solution
             saved, filepath = organizer.save_solution(full_sub, problem)
             
             if saved:
@@ -879,9 +957,10 @@ def sync_solutions(client: LeetCodeClient, organizer: SolutionOrganizer,
     # Summary
     CLI.summary_box({
         "New solutions saved": new_count,
-        "Already existed": skipped_count,
+        "Existing solutions updated": updated_count,
+        "Already up to date": skipped_count,
         "Failed": failed_count,
-        "Total processed": new_count + skipped_count + failed_count
+        "Total processed": new_count + updated_count + skipped_count + failed_count
     })
 
 

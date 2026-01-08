@@ -2,10 +2,10 @@
 LeetCode: 2026 01 05 22.09.50 Accepted Runtime 0ms Memory 20.6MB
 
 Algorithm:
-TODO: Describe your approach here
+Nested loops to check all pairs.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 from typing import List

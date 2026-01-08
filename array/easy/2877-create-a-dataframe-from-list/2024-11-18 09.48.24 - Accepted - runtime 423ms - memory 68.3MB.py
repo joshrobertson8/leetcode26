@@ -4,8 +4,8 @@ LeetCode: 2024 11 18 09.48.24 Accepted Runtime 423ms Memory 68.3MB
 Algorithm:
 TODO: Describe your approach here
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(1)
+Space Complexity: O(1)
 """
 
 import pandas as pd

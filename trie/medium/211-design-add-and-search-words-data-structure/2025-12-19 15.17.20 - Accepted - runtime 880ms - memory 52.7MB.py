@@ -4,8 +4,8 @@ LeetCode: 2025 12 19 15.17.20 Accepted Runtime 880ms Memory 52.7MB
 Algorithm:
 TODO: Describe your approach here
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(m)
+Space Complexity: O(m)
 """
 
 class WordDictionary:

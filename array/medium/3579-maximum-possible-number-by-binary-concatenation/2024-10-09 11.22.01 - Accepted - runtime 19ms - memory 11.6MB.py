@@ -7,8 +7,8 @@ import itertools
 Algorithm:
 TODO: Describe your approach here
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(log n)
+Space Complexity: O(1)
 """
 
 class Solution:

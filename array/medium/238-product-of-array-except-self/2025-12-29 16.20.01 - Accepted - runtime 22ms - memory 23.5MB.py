@@ -2,10 +2,10 @@
 LeetCode: 2025 12 29 16.20.01 Accepted Runtime 22ms Memory 23.5MB
 
 Algorithm:
-TODO: Describe your approach here
+Two-pass approach: first pass calculates prefix products, second pass multiplies by suffix products.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class Solution:

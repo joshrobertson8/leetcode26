@@ -2,10 +2,10 @@
 LeetCode: 2025 07 05 12.48.30 Accepted Runtime 7ms Memory 12.7mb
 
 Algorithm:
-TODO: Describe your approach here
+Iterate through the array once.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 class Solution(object):

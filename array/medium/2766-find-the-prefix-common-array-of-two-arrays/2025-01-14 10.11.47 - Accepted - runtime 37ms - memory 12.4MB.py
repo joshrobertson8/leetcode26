@@ -2,10 +2,10 @@
 LeetCode: 2025 01 14 10.11.47 Accepted Runtime 37ms Memory 12.4mb
 
 Algorithm:
-TODO: Describe your approach here
+Build prefix array.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n²)
+Space Complexity: O(n)
 """
 
 class Solution(object):

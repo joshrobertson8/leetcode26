@@ -2,10 +2,10 @@
 LeetCode: 2025 10 01 15.37.43 Accepted Runtime 255ms Memory 31.6MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a hash table to store seen elements for O(1) lookup. Stack-based approach. BFS using queue. DFS traversal.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n²)
+Space Complexity: O(n)
 """
 
 class Solution(object):

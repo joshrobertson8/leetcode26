@@ -2,10 +2,10 @@
 LeetCode: 2025 12 17 13.27.35 Accepted Runtime 273ms Memory 28.3MB
 
 Algorithm:
-TODO: Describe your approach here
+Use a hash table to store seen elements for O(1) lookup. DFS traversal.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n²)
+Space Complexity: O(n)
 """
 
 from typing import List, Set, Tuple

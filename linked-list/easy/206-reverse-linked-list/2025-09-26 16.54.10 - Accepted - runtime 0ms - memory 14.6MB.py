@@ -2,10 +2,10 @@
 LeetCode: 2025 09 26 16.54.10 Accepted Runtime 0ms Memory 14.6MB
 
 Algorithm:
-TODO: Describe your approach here
+Iterate until condition is met.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(1)
 """
 
 # Definition for singly-linked list.

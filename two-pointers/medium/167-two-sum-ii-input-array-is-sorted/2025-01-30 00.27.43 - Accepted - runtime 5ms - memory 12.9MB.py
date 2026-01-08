@@ -2,10 +2,10 @@
 LeetCode: 2025 01 30 00.27.43 Accepted Runtime 5ms Memory 12.9mb
 
 Algorithm:
-TODO: Describe your approach here
+Iterate until condition is met.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 class Solution(object):

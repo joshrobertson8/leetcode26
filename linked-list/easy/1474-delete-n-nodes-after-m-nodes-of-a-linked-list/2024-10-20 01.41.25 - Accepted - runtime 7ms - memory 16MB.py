@@ -4,8 +4,8 @@ LeetCode: 2024 10 20 01.41.25 Accepted Runtime 7ms Memory 16MB
 Algorithm:
 TODO: Describe your approach here
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n²)
+Space Complexity: O(1)
 """
 
 # Definition for singly-linked list.

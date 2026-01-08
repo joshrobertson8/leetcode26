@@ -2,10 +2,10 @@
 LeetCode: 2025 03 22 23.49.46 Accepted Runtime 0ms Memory 12.4mb
 
 Algorithm:
-TODO: Describe your approach here
+Use a hash table to store seen elements for O(1) lookup. Dynamic programming with memoization.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 class Solution(object):

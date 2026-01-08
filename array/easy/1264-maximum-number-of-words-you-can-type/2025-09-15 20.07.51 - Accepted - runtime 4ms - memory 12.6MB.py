@@ -4,8 +4,8 @@ LeetCode: 2025 09 15 20.07.51 Accepted Runtime 4ms Memory 12.6mb
 Algorithm:
 TODO: Describe your approach here
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n²)
+Space Complexity: O(n)
 """
 
 class Solution(object):

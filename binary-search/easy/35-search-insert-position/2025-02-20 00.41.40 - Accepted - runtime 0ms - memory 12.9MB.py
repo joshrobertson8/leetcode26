@@ -2,10 +2,10 @@
 LeetCode: 2025 02 20 00.41.40 Accepted Runtime 0ms Memory 12.9mb
 
 Algorithm:
-TODO: Describe your approach here
+Two pointers technique. Sliding window technique.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(1)
 """
 
 class Solution(object):

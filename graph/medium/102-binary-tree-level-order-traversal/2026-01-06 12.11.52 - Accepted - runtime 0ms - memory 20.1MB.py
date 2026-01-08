@@ -2,10 +2,10 @@
 LeetCode: 2026 01 06 12.11.52 Accepted Runtime 0ms Memory 20.1MB
 
 Algorithm:
-TODO: Describe your approach here
+Two pointers approach. DFS traversal.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(log n)
+Space Complexity: O(1)
 """
 
 # Definition for a binary tree node.

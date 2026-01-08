@@ -2,10 +2,10 @@
 LeetCode: 2025 09 26 16.11.58 Accepted Runtime 0ms Memory 12.5MB
 
 Algorithm:
-TODO: Describe your approach here
+Stack-based approach.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(n)
+Space Complexity: O(n)
 """
 
 class Solution(object):

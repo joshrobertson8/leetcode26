@@ -10,10 +10,10 @@ self.left = left
 self.right = right
 
 Algorithm:
-TODO: Describe your approach here
+Two pointers approach.
 
-Time Complexity: O(?)
-Space Complexity: O(?)
+Time Complexity: O(log n)
+Space Complexity: O(1)
 """
 
 class Solution(object):
