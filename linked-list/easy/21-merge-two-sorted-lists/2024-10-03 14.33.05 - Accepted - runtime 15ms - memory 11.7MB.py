@@ -8,7 +8,7 @@ self.val = val
 self.next = next
 
 Algorithm:
-Continue while window is valid.
+Use dummy node to simplify edge cases. Compare heads of both lists, append smaller to current, advance that list. After loop, append remaining nodes from the non-empty list. Return dummy.next (skip dummy node). Note: there's a bug where list1/list2 are advanced after appending remaining nodes.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

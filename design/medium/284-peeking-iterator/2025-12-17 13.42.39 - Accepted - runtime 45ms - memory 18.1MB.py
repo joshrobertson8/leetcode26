@@ -2,7 +2,7 @@
 LeetCode: 2025 12 17 13.42.39 Accepted Runtime 45ms Memory 18.1MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Maintain a cached next value (_next) that's preloaded in the constructor. peek() returns the cached value without advancing. next() returns the cached value and advances the iterator, updating the cache. hasNext() checks if the cache is not None. This allows peeking without consuming the iterator.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

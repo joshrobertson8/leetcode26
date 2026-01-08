@@ -2,7 +2,7 @@
 LeetCode: 2026 01 05 17.12.46 Accepted Runtime 311ms Memory 36.9MB
 
 Algorithm:
-Make two passes: forward then backward.
+First pass: build prefix sum array where prefixSum[i] is the sum of elements from 0 to i. Second pass: build suffix minimum array where suffixMin[i] is the minimum element from i to the end. For each split position i, calculate score as prefixSum[i] - suffixMin[i+1] (sum of left part minus minimum of right part). Return the maximum score.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

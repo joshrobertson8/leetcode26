@@ -2,7 +2,7 @@
 LeetCode: 2025 09 27 19.27.07 Accepted Runtime 12ms Memory 17mb
 
 Algorithm:
-Greedy algorithm.
+Sort intervals by start time. Initialize result with first interval. For each subsequent interval, if it overlaps with last interval in result (res[-1][1] >= start), merge by updating end to max of both ends. Otherwise, append as new interval. This merges all overlapping intervals.
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)

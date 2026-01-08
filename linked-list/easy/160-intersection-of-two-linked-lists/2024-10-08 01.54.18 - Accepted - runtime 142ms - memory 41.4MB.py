@@ -2,7 +2,7 @@
 LeetCode: 2024 10 08 01.54.18 Accepted Runtime 142ms Memory 41.4MB
 
 Algorithm:
-Continue until condition is met.
+Two-pointer technique: traverse both lists simultaneously. When one pointer reaches end, switch it to the other list's head. When both pointers meet (pA == pB), that's the intersection. If no intersection, both become None simultaneously. This handles different list lengths.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

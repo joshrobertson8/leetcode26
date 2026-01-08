@@ -2,7 +2,7 @@
 LeetCode: 2026 01 01 17.34.17 Accepted Runtime 27ms Memory 17.5MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Backtracking: try including the current candidate (can reuse it) or skipping to the next. Track the current path and its sum. If sum equals target, add path to result. If sum exceeds target or we've exhausted candidates, backtrack. When including a candidate, we can reuse it (same index), allowing multiple uses of the same number.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

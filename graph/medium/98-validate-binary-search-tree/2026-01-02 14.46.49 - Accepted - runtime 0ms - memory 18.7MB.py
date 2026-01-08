@@ -2,7 +2,7 @@
 LeetCode: 2026 01 02 14.46.49 Accepted Runtime 0ms Memory 18.7MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Recursive validation with bounds: each node must be within (low, high) range. Root can be any value. For left child, upper bound becomes parent's value. For right child, lower bound becomes parent's value. If any node violates its bounds, return False. Recursively validate left and right subtrees with updated bounds.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

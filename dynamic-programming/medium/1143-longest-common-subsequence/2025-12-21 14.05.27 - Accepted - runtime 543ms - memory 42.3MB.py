@@ -2,7 +2,7 @@
 LeetCode: 2025 12 21 14.05.27 Accepted Runtime 543ms Memory 42.3MB
 
 Algorithm:
-Dynamic programming with memoization. Greedy algorithm.
+2D dynamic programming: dp[i][j] represents LCS length of text1[0:i] and text2[0:j]. If text1[i-1] == text2[j-1], dp[i][j] = dp[i-1][j-1] + 1 (extend LCS). Otherwise, dp[i][j] = max(dp[i-1][j], dp[i][j-1]) (take best from skipping one character in either string). Return dp[m][n].
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

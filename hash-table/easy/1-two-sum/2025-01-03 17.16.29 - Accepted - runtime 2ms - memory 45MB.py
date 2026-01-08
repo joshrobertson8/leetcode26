@@ -2,7 +2,7 @@
 LeetCode: 2025 01 03 17.16.29 Accepted Runtime 2ms Memory 45MB
 
 Algorithm:
-TODO: Describe your approach here
+One-pass hash map using Java HashMap: as we iterate, for each number calculate the complement. If complement exists in map, return [map.get(complement), i]. Otherwise, store current number and its index in map. This finds the pair in a single pass, more efficient than two-pass approach.
 
 Time Complexity: O(?)
 Space Complexity: O(?)

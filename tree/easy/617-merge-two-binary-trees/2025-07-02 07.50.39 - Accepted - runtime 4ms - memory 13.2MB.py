@@ -10,7 +10,7 @@ self.left = left
 self.right = right
 
 Algorithm:
-Two pointers approach.
+Recursive merge: if both roots are None, return None. If one is None, return the other. Otherwise, create new node with sum of both values. Recursively merge left subtrees and right subtrees. Return merged tree. This combines two trees by summing corresponding nodes.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

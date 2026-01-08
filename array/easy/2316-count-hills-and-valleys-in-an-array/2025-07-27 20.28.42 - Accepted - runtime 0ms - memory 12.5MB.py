@@ -2,7 +2,7 @@
 LeetCode: 2025 07 27 20.28.42 Accepted Runtime 0ms Memory 12.5mb
 
 Algorithm:
-Use two pointers moving toward each other.
+For each position, skip if it equals the previous element. Otherwise, find the closest non-equal left and right neighbors by scanning left and right until we find different values. If the current element is lower than both neighbors, it's a valley. If higher than both, it's a hill. After checking, jump to the right pointer position to avoid counting duplicates.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

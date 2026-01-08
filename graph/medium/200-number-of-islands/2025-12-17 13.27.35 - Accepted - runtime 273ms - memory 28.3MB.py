@@ -2,7 +2,7 @@
 LeetCode: 2025 12 17 13.27.35 Accepted Runtime 273ms Memory 28.3MB
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup. DFS traversal.
+DFS traversal: iterate through each cell. When finding an unvisited '1', start DFS to mark all connected '1's as visited. DFS explores 4-directional neighbors that are '1' and unvisited. Each DFS call marks one island. Count the number of DFS starts.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

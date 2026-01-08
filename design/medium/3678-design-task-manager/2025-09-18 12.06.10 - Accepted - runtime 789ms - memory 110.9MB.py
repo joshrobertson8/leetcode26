@@ -1,3 +1,13 @@
+"""
+LeetCode: 2025 09 18 12.06.10 Accepted Runtime 789ms Memory 110.9MB
+
+Algorithm:
+Use a min-heap (priority queue) with negative priorities for max-heap behavior, and a hash map to track current task states. add() and edit() update the map and push to heap. rmv() removes from map only. execTop() pops from heap until finding a valid task (exists in map and priority matches current state), then removes it. This handles stale heap entries lazily.
+
+Time Complexity: O(n) for add/edit/execTop, O(1) for rmv
+Space Complexity: O(1)
+"""
+
 import heapq
 
 class TaskManager:

@@ -2,7 +2,7 @@
 LeetCode: 2025 08 31 14.32.42 Accepted Runtime 0ms Memory 13.4MB
 
 Algorithm:
-Continue until condition is met.
+Standard binary search: maintain left and right pointers. Calculate mid point. If nums[mid] equals target, return mid. If nums[mid] is greater than target, search left half by setting right = mid - 1. Otherwise, search right half by setting left = mid + 1. If loop exits without finding target, return -1.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

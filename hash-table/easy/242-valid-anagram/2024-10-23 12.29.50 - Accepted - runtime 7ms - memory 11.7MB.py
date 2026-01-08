@@ -2,7 +2,7 @@
 LeetCode: 2024 10 23 12.29.50 Accepted Runtime 7ms Memory 11.7mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Build frequency map for string s. For each character in t, decrement its count in the map. If a character in t doesn't exist in map, return False. After processing t, check if all counts in map are zero. If any count is non-zero, return False. This verifies both strings have same characters with same frequencies.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

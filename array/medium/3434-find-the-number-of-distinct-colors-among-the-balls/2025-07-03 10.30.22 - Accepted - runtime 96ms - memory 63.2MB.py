@@ -2,7 +2,7 @@
 LeetCode: 2025 07 03 10.30.22 Accepted Runtime 96ms Memory 63.2mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Maintain two maps: ballToColors tracks which color each ball currently has, and uniqueColors counts how many balls have each color. For each query, if the ball already has a color, decrement the count for that color (and remove it if count becomes 0). Then assign the new color to the ball and increment its count. Append the number of distinct colors (size of uniqueColors) to the result.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

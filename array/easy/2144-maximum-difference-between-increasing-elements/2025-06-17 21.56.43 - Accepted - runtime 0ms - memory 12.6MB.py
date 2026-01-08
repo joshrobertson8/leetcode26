@@ -2,7 +2,7 @@
 LeetCode: 2025 06 17 21.56.43 Accepted Runtime 0ms Memory 12.6mb
 
 Algorithm:
-Greedy algorithm.
+Track the minimum value seen so far (candidate). For each number, update the minimum candidate, then calculate the difference between the current number and the minimum. Keep track of the maximum difference. If no positive difference is found (answer is 0), return -1, otherwise return the maximum difference.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

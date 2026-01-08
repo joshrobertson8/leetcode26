@@ -2,7 +2,7 @@
 LeetCode: 2025 09 26 16.23.37 Accepted Runtime 263ms Memory 131.2MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Backtracking: build combinations of k numbers from 1 to n. Start from a number, add it to the current combination, then recursively build combinations starting from the next number (to avoid duplicates and maintain order). When the combination reaches size k, add it to results. Backtrack by removing the last added number before trying the next option.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

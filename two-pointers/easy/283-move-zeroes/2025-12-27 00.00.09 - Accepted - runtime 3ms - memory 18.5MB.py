@@ -2,7 +2,7 @@
 LeetCode: 2025 12 27 00.00.09 Accepted Runtime 3ms Memory 18.5MB
 
 Algorithm:
-Iterate through the array once.
+Two-pass two pointers: first pass (i, base) moves non-zero elements to front. For each non-zero nums[i], write to nums[base] and increment base. Second pass fills remaining positions (base to end) with zeros. This moves all zeros to end while preserving relative order of non-zeros.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

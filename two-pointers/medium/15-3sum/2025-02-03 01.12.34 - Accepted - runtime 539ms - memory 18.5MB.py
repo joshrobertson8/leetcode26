@@ -2,7 +2,7 @@
 LeetCode: 2025 02 03 01.12.34 Accepted Runtime 539ms Memory 18.5mb
 
 Algorithm:
-Sort the array first.
+Sort then two pointers: sort array. For each unique first element nums[i], use two pointers (lo, hi) to find pairs that sum to -nums[i]. Skip duplicates for first element. When sum equals 0, add triplet, move both pointers, skip duplicates for lo. This finds all unique triplets summing to zero.
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)

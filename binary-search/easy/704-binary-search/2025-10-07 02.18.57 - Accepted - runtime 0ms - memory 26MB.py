@@ -2,7 +2,7 @@
 LeetCode: 2025 10 07 02.18.57 Accepted Runtime 0ms Memory 26MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Recursive binary search: define a helper function that takes low and high indices. If low > high, return -1 (not found). Calculate mid. If nums[mid] equals target, return mid. If nums[mid] > target, recursively search left half. Otherwise, recursively search right half. Start with the full array range.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

@@ -2,7 +2,7 @@
 LeetCode: 2025 12 16 15.19.23 Accepted Runtime 3ms Memory 19.9MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Topological sort using DFS: build adjacency list where graph[course] contains prerequisites. Use visited set (completed courses) and cycle set (currently processing). For each course, if in cycle, return False (cycle detected). If visited, return True. Add to cycle, recursively process prerequisites. If all prerequisites complete, remove from cycle, add to visited, append to result. Return result if all courses can be completed.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

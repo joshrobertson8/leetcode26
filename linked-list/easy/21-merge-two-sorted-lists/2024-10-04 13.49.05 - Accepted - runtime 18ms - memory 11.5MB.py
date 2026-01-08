@@ -8,7 +8,7 @@ self.val = val
 self.next = next
 
 Algorithm:
-Use two pointers moving toward each other.
+Compare heads of both lists, set the smaller as head. Use current pointer to build merged list. While both lists exist, compare values and append smaller node, advance that list. After loop, append remaining nodes from the non-empty list. Return head.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

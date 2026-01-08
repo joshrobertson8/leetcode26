@@ -9,7 +9,7 @@ self.val = val
 self.next = next
 
 Algorithm:
-Continue while window is valid.
+Use dummy node to simplify edge cases. Compare heads of both lists, append smaller to current, advance that list. After loop, append remaining nodes from the non-empty list. Return dummy.next (skip dummy node). This avoids special case handling for initial head.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

@@ -2,7 +2,7 @@
 LeetCode: 2025 07 14 12.42.04 Accepted Runtime 3ms Memory 12.4MB
 
 Algorithm:
-Traverse the linked list.
+Traverse list left to right. For each bit, multiply result by 2 (shift left) and add current bit value. This builds the binary number: result = result * 2 + current.val. Return final result.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

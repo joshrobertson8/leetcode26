@@ -2,7 +2,7 @@
 LeetCode: 2025 01 23 11.04.24 Accepted Runtime 3ms Memory 12.7mb
 
 Algorithm:
-Stack-based approach.
+Use stack to match brackets: map closing brackets to opening brackets. For closing brackets, if stack exists and top matches, pop. Otherwise return False. For opening brackets (else case), push to stack. After processing, stack must be empty for valid parentheses.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

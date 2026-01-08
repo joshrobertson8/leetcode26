@@ -2,7 +2,7 @@
 LeetCode: 2026 01 05 22.09.50 Accepted Runtime 0ms Memory 20.6MB
 
 Algorithm:
-Nested loops to check all pairs.
+Use Counter to count frequencies. Maintain a min-heap of size k containing (frequency, value) pairs. For each number, push to heap. If heap size exceeds k, pop the smallest frequency. This keeps the k most frequent elements. Extract values from the final heap.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

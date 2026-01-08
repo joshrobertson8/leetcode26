@@ -2,7 +2,7 @@
 LeetCode: 2024 10 07 17.36.42 Accepted Runtime 1ms Memory 8.1MB
 
 Algorithm:
-TODO: Describe your approach here
+Brute force string matching: for each starting position i in haystack (0 to len_haystack - len_needle), check if needle matches substring starting at i. Compare character by character. If all characters match (j == len_needle), return i. If no match found, return -1. This finds first occurrence of needle in haystack.
 
 Time Complexity: O(?)
 Space Complexity: O(?)

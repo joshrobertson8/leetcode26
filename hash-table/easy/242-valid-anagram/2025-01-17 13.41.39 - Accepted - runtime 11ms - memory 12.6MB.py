@@ -2,7 +2,7 @@
 LeetCode: 2025 01 17 13.41.39 Accepted Runtime 11ms Memory 12.6mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Build two frequency maps (hashmap and hashm) for strings s and t. Count character frequencies in each string. If lengths differ, return False. Compare the two maps - they must be identical for anagrams. Return True if maps match, False otherwise.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

@@ -9,7 +9,7 @@ self.val = val
 self.next = next
 
 Algorithm:
-Traverse the linked list to collect values into an array, then compare with its reverse.
+Traverse list and collect all values into array. Create reversed array. Compare original and reversed arrays. If equal, list is palindrome. This uses O(n) extra space but is straightforward.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

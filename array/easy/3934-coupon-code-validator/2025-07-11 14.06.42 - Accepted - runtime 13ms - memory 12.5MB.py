@@ -2,7 +2,7 @@
 LeetCode: 2025 07 11 14.06.42 Accepted Runtime 13ms Memory 12.5mb
 
 Algorithm:
-Sort the input first.
+Define a priority order for business lines. For each coupon, check if it's valid: code is non-empty, business line exists in order, and isActive is true. Also verify the code contains only alphanumeric characters and underscores. Store valid coupons with their priority, then sort by priority and return the codes.
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)

@@ -2,7 +2,7 @@
 LeetCode: 2025 12 16 15.55.46 Accepted Runtime 6ms Memory 20.1MB
 
 Algorithm:
-Sort the input first. Use two pointers moving toward each other.
+Sort start and end times separately. Use two pointers: s for start times, e for end times. When start[s] < end[e], a meeting starts (increment count). When start[s] >= end[e], a meeting ends (decrement count). Track maximum count (maxCount) which represents maximum concurrent meetings needed.
 
 Time Complexity: O(n log n)
 Space Complexity: O(1)

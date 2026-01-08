@@ -2,7 +2,7 @@
 LeetCode: 2025 07 11 11.53.09 Accepted Runtime 183ms Memory 16.4MB
 
 Algorithm:
-Iterate through each element with its index.
+Sliding window with hash map: track fruit types in basket map. Expand window by adding fruits[right]. If basket has more than 2 types, shrink from left (decrement count, delete if zero, increment base). Track maximum window size (idx - base + 1). This finds longest subarray with at most 2 distinct fruit types.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

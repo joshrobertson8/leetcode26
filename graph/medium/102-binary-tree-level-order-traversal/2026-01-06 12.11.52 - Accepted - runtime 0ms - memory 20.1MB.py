@@ -2,7 +2,7 @@
 LeetCode: 2026 01 06 12.11.52 Accepted Runtime 0ms Memory 20.1MB
 
 Algorithm:
-Two pointers approach. DFS traversal.
+DFS with level tracking: recursively traverse tree, passing current level. If level equals result length, append new empty list for that level. Add node value to res[level]. Recursively process left and right children at level+1. This collects nodes by their depth level.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

@@ -2,7 +2,7 @@
 LeetCode: 2025 08 10 16.44.39 Accepted Runtime 12ms Memory 12.4mb
 
 Algorithm:
-Use a Counter to count frequencies.
+Count the frequency of each digit in n using Counter. Then check all powers of 2 up to 2^30. For each power of 2, count its digit frequencies. If the frequency counts match exactly, n can be reordered to form that power of 2. Return True if any match is found, False otherwise.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

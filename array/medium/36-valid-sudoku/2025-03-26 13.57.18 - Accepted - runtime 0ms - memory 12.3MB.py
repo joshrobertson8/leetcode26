@@ -2,7 +2,7 @@
 LeetCode: 2025 03 26 13.57.18 Accepted Runtime 0ms Memory 12.3mb
 
 Algorithm:
-Use nested loops to check all pairs.
+Use three sets of sets: one for rows, one for columns, and one for 3x3 boxes. For each cell, if it's not empty, check if the value already exists in the corresponding row, column, or box set. If it does, return False. Otherwise, add it to all three sets. Calculate box index as (r//3)*3 + c//3. If all cells pass, return True.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

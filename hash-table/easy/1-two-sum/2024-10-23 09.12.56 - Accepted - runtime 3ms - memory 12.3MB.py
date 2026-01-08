@@ -2,7 +2,7 @@
 LeetCode: 2024 10 23 09.12.56 Accepted Runtime 3ms Memory 12.3mb
 
 Algorithm:
-Use a hash map to track seen values. Use nested loops to check all pairs.
+Two-pass hash map: first pass stores each number and its index in hashmap. Second pass, for each number, check if complement exists in hashmap and its index differs from current index. Return the two indices. O(n) time with two passes.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

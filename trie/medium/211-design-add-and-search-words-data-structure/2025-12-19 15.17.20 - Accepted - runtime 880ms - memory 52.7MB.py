@@ -2,7 +2,7 @@
 LeetCode: 2025 12 19 15.17.20 Accepted Runtime 880ms Memory 52.7MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Trie with wildcard search using nested dictionaries: trie is dictionary where each level maps characters to next level, '$' marks word end. addWord() inserts word by creating nested dictionaries. search() uses recursive helper: if character is '.', try all keys (except '$') recursively. Otherwise, traverse to specific child. Return True if '$' exists at end. This enables pattern matching with '.' as wildcard.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

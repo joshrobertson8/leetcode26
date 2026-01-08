@@ -2,7 +2,7 @@
 LeetCode: 2024 11 25 20.31.27 Accepted Runtime 6ms Memory 12.7mb
 
 Algorithm:
-Use a hash map to track seen values.
+Build frequency map counting occurrences of each number. Return the number with maximum frequency using max() with key=hashmap.get. This finds the element that appears more than n/2 times.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

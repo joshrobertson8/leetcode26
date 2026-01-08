@@ -2,7 +2,7 @@
 LeetCode: 2025 03 10 17.54.07 Accepted Runtime 15ms Memory 12.4mb
 
 Algorithm:
-Iterate through each character.
+Create an array of empty strings, one for each row. Use a direction variable (1 for down, -1 for up) and a row pointer. For each character, add it to the current row's string. When reaching the top (row 0), change direction to down. When reaching the bottom (row numRows-1), change direction to up. Move the row pointer according to direction. Finally, join all rows.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

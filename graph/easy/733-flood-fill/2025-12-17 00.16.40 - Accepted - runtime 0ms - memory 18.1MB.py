@@ -2,7 +2,7 @@
 LeetCode: 2025 12 17 00.16.40 Accepted Runtime 0ms Memory 18.1MB
 
 Algorithm:
-Use a set for O(1) lookup.
+BFS flood fill: start from (sr, sc), use a queue and visited set. For each pixel, change its color and explore 4-directional neighbors. Only process neighbors that are within bounds, haven't been visited, and have the original color. This fills all connected pixels of the original color.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

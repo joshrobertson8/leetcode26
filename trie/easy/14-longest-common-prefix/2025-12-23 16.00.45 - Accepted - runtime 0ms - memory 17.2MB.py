@@ -2,7 +2,7 @@
 LeetCode: 2025 12 23 16.00.45 Accepted Runtime 0ms Memory 17.2MB
 
 Algorithm:
-Process the input directly.
+Character-by-character comparison: iterate through positions of first string. For each position i, check if all strings have same character at i. If any string is shorter (i >= len(word)) or character differs, return prefix up to i. If all positions match, return entire first string. This finds longest common prefix by comparing character by character.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

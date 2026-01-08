@@ -2,7 +2,7 @@
 LeetCode: 2024 10 23 09.31.00 Accepted Runtime 13ms Memory 12.6mb
 
 Algorithm:
-Iterate through nums.
+Boyer-Moore voting algorithm: maintain a candidate and count. For each number, if count is 0, set candidate to current number. If current number equals candidate, increment count; otherwise decrement. The majority element will survive this process and be the final candidate. Return candidate.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

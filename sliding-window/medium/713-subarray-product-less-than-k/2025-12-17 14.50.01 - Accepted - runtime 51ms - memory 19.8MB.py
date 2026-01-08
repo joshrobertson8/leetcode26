@@ -2,7 +2,7 @@
 LeetCode: 2025 12 17 14.50.01 Accepted Runtime 51ms Memory 19.8MB
 
 Algorithm:
-Use nested loops to check all pairs.
+Sliding window: expand window by multiplying product with nums[r]. While product >= k and l <= r, shrink window from left (divide by nums[l], increment l). For each valid window [l, r], all subarrays ending at r with start >= l are valid. Count them as (r - l + 1). This counts all subarrays with product < k.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

@@ -5,7 +5,7 @@ Problem:
 import itertools
 
 Algorithm:
-Process the input directly.
+Convert each number to its binary representation (without '0b' prefix). Generate all possible permutations of these binary strings. For each permutation, concatenate the binary strings and convert back to decimal. Return the maximum decimal value obtained from all permutations.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

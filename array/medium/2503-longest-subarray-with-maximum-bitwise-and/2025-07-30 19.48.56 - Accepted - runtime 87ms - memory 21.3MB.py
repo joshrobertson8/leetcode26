@@ -2,7 +2,7 @@
 LeetCode: 2025 07 30 19.48.56 Accepted Runtime 87ms Memory 21.3mb
 
 Algorithm:
-Use two pointers moving toward each other.
+Find the maximum value in the array first. Then iterate through the array, tracking the length of consecutive elements equal to the maximum value. Reset the counter when encountering a non-maximum element. Return the longest consecutive sequence of maximum values, since bitwise AND of a subarray containing the maximum value can only be the maximum value itself.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

@@ -2,7 +2,7 @@
 LeetCode: 2025 09 26 20.31.30 Accepted Runtime 117ms Memory 20.1mb
 
 Algorithm:
-Iterate through each index.
+Two pointers from both ends: start with l=0, r=n-1. Calculate area = width * min(height[l], height[r]). Update maxArea. Move pointer with smaller height (l++ if height[l] < height[r], else r--). Continue until pointers meet. This maximizes area by always moving the shorter line, as width decreases but height might increase.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

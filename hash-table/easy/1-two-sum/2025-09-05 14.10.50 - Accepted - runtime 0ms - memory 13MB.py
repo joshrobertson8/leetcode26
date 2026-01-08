@@ -2,7 +2,7 @@
 LeetCode: 2025 09 05 14.10.50 Accepted Runtime 0ms Memory 13mb
 
 Algorithm:
-Use a hash map to track seen values.
+One-pass hash map: as we iterate, for each number calculate the complement needed. If complement exists in hash_table, return [hash_table[complement], i]. Otherwise, store current number and its index. This finds the pair in a single pass, more efficient than two-pass approach.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

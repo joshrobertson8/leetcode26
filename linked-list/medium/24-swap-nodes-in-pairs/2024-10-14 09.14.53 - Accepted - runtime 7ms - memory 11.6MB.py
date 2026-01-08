@@ -2,7 +2,7 @@
 LeetCode: 2024 10 14 09.14.53 Accepted Runtime 7ms Memory 11.6MB
 
 Algorithm:
-Use two pointers moving toward each other.
+Handle empty or single-node lists. Traverse list in pairs. For each pair, swap values (not nodes). Move current two steps forward. This swaps adjacent nodes by value, simpler than node pointer manipulation.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

@@ -2,7 +2,7 @@
 LeetCode: 2025 02 28 14.02.45 Accepted Runtime 4ms Memory 15.1MB
 
 Algorithm:
-Recursively process each element.
+Recursive DFS: if root is None, return 0. Otherwise, recursively compute depth of left and right subtrees. Return 1 (current node) plus the maximum of left and right depths. This finds the longest path from root to any leaf.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

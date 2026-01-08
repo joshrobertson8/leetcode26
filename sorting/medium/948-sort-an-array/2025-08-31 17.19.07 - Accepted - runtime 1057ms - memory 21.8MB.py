@@ -2,7 +2,7 @@
 LeetCode: 2025 08 31 17.19.07 Accepted Runtime 1057ms Memory 21.8mb
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Merge sort: recursively divide array into halves until base case (length <= 1). Merge sorted halves by comparing elements from both arrays, appending smaller element. Continue until one array is exhausted, then append remaining elements. This sorts the array using divide-and-conquer approach.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

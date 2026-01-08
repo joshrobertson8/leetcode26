@@ -2,7 +2,7 @@
 LeetCode: 2025 10 07 01.33.05 Accepted Runtime 89ms Memory 26.9MB
 
 Algorithm:
-Iterate through each index.
+Track the minimum buy price seen so far (buyPoint). For each day, if the current price is lower than buyPoint, update buyPoint. Calculate profit if selling today (price - buyPoint) and update the maximum profit. This finds the best single buy-sell pair in one pass.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

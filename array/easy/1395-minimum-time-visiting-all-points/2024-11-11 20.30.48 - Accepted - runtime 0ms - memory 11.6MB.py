@@ -2,7 +2,7 @@
 LeetCode: 2024 11 11 20.30.48 Accepted Runtime 0ms Memory 11.6mb
 
 Algorithm:
-Iterate through each index.
+To move from one point to another in 8-directional movement (including diagonals), the time needed is the maximum of the horizontal and vertical distances. This is because we can move diagonally to cover both dimensions simultaneously. Sum up the time needed to move between consecutive points.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

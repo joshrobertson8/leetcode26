@@ -2,7 +2,7 @@
 LeetCode: 2025 12 20 14.45.47 Accepted Runtime 0ms Memory 17.4MB
 
 Algorithm:
-Continue until condition is met.
+Use a deque to store timestamps of hits. hit() appends the timestamp. getHits() removes all timestamps older than 300 seconds (timestamp - hits[0] >= 300) from the front, then returns the length of remaining hits. This maintains only hits from the last 300 seconds.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

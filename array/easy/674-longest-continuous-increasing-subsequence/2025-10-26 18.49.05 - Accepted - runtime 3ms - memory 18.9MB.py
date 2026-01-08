@@ -2,7 +2,7 @@
 LeetCode: 2025 10 26 18.49.05 Accepted Runtime 3ms Memory 18.9MB
 
 Algorithm:
-Greedy algorithm.
+Use dynamic programming: create an array d where d[i] represents the length of the longest continuous increasing subsequence ending at index i. Initialize all values to 1. For each position, if the current element is greater than the previous one, extend the subsequence: d[i] = d[i-1] + 1. Return the maximum value in d.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

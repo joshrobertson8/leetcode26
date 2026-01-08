@@ -2,7 +2,7 @@
 LeetCode: 2025 03 18 23.03.11 Accepted Runtime 0ms Memory 12.4MB
 
 Algorithm:
-Recursively process each element.
+Recursive DFS: if root is None, return None. Swap left and right children of current node. Recursively invert right and left subtrees. Return the root. This inverts the entire tree by swapping children at each level.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

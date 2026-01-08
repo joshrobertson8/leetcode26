@@ -2,7 +2,7 @@
 LeetCode: 2026 01 04 16.26.08 Accepted Runtime 3ms Memory 18.5MB
 
 Algorithm:
-Use a Counter to count frequencies.
+Use Counter to count frequencies of all numbers. Since array has 2n elements and one number appears n times, that number will have frequency n. Iterate through counter items and return the number with frequency equal to n // 2.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

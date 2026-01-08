@@ -2,7 +2,7 @@
 LeetCode: 2025 10 02 13.20.40 Accepted Runtime 3ms Memory 18MB
 
 Algorithm:
-Iterate backwards through the array.
+Dynamic programming backwards: dp[i] represents minimum cost from step i to top. Initialize dp[n-1] = cost[n-1], dp[n-2] = cost[n-2]. For each step i from n-3 down to 0, dp[i] = cost[i] + min(dp[i+1], dp[i+2]). Return min(dp[0], dp[1]) since we can start from step 0 or 1.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

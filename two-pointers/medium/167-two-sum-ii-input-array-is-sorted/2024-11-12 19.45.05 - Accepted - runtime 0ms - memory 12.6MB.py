@@ -2,7 +2,7 @@
 LeetCode: 2024 11 12 19.45.05 Accepted Runtime 0ms Memory 12.6mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Hash map approach: store each number and its index+1 in hashmap. For each number, check if complement (target - number) exists in hashmap. If found, return indices. This works but doesn't leverage sorted property of array.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

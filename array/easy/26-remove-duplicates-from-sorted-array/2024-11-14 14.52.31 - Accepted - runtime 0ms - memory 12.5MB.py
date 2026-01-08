@@ -2,7 +2,7 @@
 LeetCode: 2024 11 14 14.52.31 Accepted Runtime 0ms Memory 12.5mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Use a hash table (dictionary) to track which elements we've already seen. As we iterate through the array, if an element hasn't been seen before, we add it to the dictionary and write it at position k. This approach works for unsorted arrays but uses extra space.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

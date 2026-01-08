@@ -2,7 +2,7 @@
 LeetCode: 2026 01 04 15.55.09 Accepted Runtime 3ms Memory 17.3MB
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+For each entry, split into visits count and domain. Split domain by '.' to get parts. For each possible subdomain (from each part index to end), join parts and add visits to counts map. This aggregates visits for all subdomains. Return formatted strings "count domain" for all entries.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

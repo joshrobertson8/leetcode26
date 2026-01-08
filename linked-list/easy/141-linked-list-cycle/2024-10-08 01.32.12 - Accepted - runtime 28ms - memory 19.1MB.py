@@ -2,7 +2,7 @@
 LeetCode: 2024 10 08 01.32.12 Accepted Runtime 28ms Memory 19.1MB
 
 Algorithm:
-Use a set for O(1) lookup.
+Use set to track visited nodes. Traverse list, if current node is in set, cycle detected (return True). Otherwise add to set and continue. If we reach end (current is None), no cycle (return False).
 
 Time Complexity: O(n)
 Space Complexity: O(n)

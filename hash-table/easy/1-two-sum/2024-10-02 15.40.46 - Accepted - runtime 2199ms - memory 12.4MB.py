@@ -2,7 +2,7 @@
 LeetCode: 2024 10 02 15.40.46 Accepted Runtime 2199ms Memory 12.4mb
 
 Algorithm:
-Use nested loops to check all pairs.
+Brute force: nested loops check all pairs (i, j) where j > i. If nums[i] + nums[j] == target, return [i, j]. This is O(n^2) time complexity, checking every possible pair combination.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

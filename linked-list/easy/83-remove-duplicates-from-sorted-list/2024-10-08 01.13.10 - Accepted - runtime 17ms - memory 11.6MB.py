@@ -9,7 +9,7 @@ self.val = val
 self.next = next
 
 Algorithm:
-Continue while window is valid.
+Since list is sorted, duplicates are adjacent. Traverse with current pointer. If current.val == current.next.val, skip next node by setting current.next = current.next.next. Otherwise, advance current. This removes duplicates in-place.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

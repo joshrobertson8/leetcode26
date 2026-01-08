@@ -2,7 +2,7 @@
 LeetCode: 2025 12 21 00.35.35 Accepted Runtime 0ms Memory 17MB
 
 Algorithm:
-Nested loops to check all pairs.
+Two-step rotation: first transpose matrix (swap matrix[i][j] with matrix[j][i] for i < j). Then reflect each row (swap matrix[i][j] with matrix[i][n-1-j] for j < n//2). This rotates 90 degrees clockwise in-place.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

@@ -2,7 +2,7 @@
 LeetCode: 2025 12 29 16.45.32 Accepted Runtime 3ms Memory 18.3MB
 
 Algorithm:
-Process the input directly.
+Two pointers: l tracks last unique element, r scans ahead. While r < n and nums[l] == nums[r], increment r (skip duplicates). When different element found, increment count, write nums[r] to nums[write], increment write and set l=r. This removes duplicates in-place, keeping only unique elements.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

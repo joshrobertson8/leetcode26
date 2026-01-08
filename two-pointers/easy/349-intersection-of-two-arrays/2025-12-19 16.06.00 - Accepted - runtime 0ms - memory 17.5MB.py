@@ -2,7 +2,7 @@
 LeetCode: 2025 12 19 16.06.00 Accepted Runtime 0ms Memory 17.5MB
 
 Algorithm:
-Direct implementation.
+Set intersection: convert both arrays to sets. Return list of intersection (common elements) using set operator &. This finds elements present in both arrays efficiently using set operations.
 
 Time Complexity: O(1)
 Space Complexity: O(n)

@@ -2,7 +2,7 @@
 LeetCode: 2025 01 16 10.01.13 Accepted Runtime 63ms Memory 12.8MB
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Count character frequencies. A palindrome can have at most one character with odd frequency. Count how many characters have odd frequencies (odd_freq). To form k palindromes, we need at least k characters (len(s) >= k) and at most k characters with odd frequencies (odd_freq <= k). Return True if both conditions hold.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

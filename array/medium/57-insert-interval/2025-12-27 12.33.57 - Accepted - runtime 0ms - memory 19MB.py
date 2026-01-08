@@ -2,7 +2,7 @@
 LeetCode: 2025 12 27 12.33.57 Accepted Runtime 0ms Memory 19MB
 
 Algorithm:
-Greedy algorithm.
+Iterate through existing intervals. If an interval ends before the new interval starts, add it to result. If an interval starts after the new interval ends, add the new interval and then set the new interval to the current one. If intervals overlap, merge by updating the new interval's start and end to encompass both. Finally, append the merged new interval.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

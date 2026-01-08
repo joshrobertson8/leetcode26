@@ -2,7 +2,7 @@
 LeetCode: 2025 07 10 14.52.32 Accepted Runtime 0ms Memory 12.5MB
 
 Algorithm:
-Use a stack.
+Iterative inorder traversal using stack: while current node exists or stack is not empty, go left as far as possible (pushing nodes to stack). Pop from stack, append value to result, then move to right subtree. This simulates recursive traversal without recursion.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

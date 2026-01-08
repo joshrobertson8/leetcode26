@@ -2,7 +2,7 @@
 LeetCode: 2025 10 06 23.10.01 Accepted Runtime 0ms Memory 17.9MB
 
 Algorithm:
-Continue while window is valid.
+Use dummy node to simplify edge cases. Handle empty lists first. Compare heads of both lists, append smaller to current, advance that list. After loop, append remaining nodes from the non-empty list. Return dummy.next (skip dummy node).
 
 Time Complexity: O(n)
 Space Complexity: O(1)

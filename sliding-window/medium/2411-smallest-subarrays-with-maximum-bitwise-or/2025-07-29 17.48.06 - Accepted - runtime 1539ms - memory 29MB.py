@@ -2,7 +2,7 @@
 LeetCode: 2025 07 29 17.48.06 Accepted Runtime 1539ms Memory 29MB
 
 Algorithm:
-Make two passes: forward then backward.
+Work backwards: for each position i, track last occurrence of each bit position (0-31) in last array. For each bit set in nums[i], update last[b] = i. Find maximum last occurrence across all bits (max_dist). The smallest subarray starting at i with maximum OR ends at max_dist, so length is max_dist - i + 1. This finds smallest subarray with maximum OR for each starting position.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

@@ -2,7 +2,7 @@
 LeetCode: 2026 01 05 15.49.52 Accepted Runtime 8ms Memory 18MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Two-pass DFS: first pass floods all border-connected 0s to 1s (not closed). Second pass counts remaining islands of 0s. For each remaining 0, start DFS to mark all connected 0s as 1s, incrementing closed island count. This identifies islands completely surrounded by 1s.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

@@ -2,7 +2,7 @@
 LeetCode: 2026 01 01 15.07.38 Accepted Runtime 263ms Memory 24.9MB
 
 Algorithm:
-Use a set for O(1) lookup. Use nested loops to check all pairs.
+BFS traversal: iterate through each cell. When finding an unvisited '1', start BFS using a queue to mark all connected '1's as visited. BFS explores 4-directional neighbors that are '1' and unvisited. Each BFS call marks one island. Count the number of BFS starts.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

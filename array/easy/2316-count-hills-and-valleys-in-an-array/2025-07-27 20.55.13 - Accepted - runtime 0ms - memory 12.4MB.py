@@ -2,7 +2,7 @@
 LeetCode: 2025 07 27 20.55.13 Accepted Runtime 0ms Memory 12.4mb
 
 Algorithm:
-Use two pointers moving toward each other.
+Use a while loop to iterate through positions. For each position, find the closest non-equal left and right neighbors by scanning left and right until we find different values. If the current element is higher than both neighbors, it's a hill. If lower than both, it's a valley. After checking, jump to the right pointer position to avoid counting duplicates.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

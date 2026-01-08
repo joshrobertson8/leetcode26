@@ -2,7 +2,7 @@
 LeetCode: 2024 12 30 12.40.32 Accepted Runtime 0ms Memory 13mb
 
 Algorithm:
-Sort the input first. Use nested loops to check all pairs.
+Sort citations in descending order. Create a mapping of rank (position) to citation value. The h-index is the maximum number of papers that have at least h citations. Count how many papers have citations >= their rank (1-indexed). Return the count.
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)

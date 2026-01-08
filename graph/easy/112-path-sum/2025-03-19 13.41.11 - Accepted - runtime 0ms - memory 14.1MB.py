@@ -2,7 +2,7 @@
 LeetCode: 2025 03 19 13.41.11 Accepted Runtime 0ms Memory 14.1MB
 
 Algorithm:
-Recursively process each element.
+Recursive DFS: if root is None, return False. If it's a leaf (no children), check if targetSum equals root.val. Otherwise, subtract root.val from targetSum and recursively check left or right subtree. Return True if either subtree has a path with the remaining sum.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

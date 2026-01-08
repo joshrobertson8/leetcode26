@@ -2,7 +2,7 @@
 LeetCode: 2025 07 25 14.38.08 Accepted Runtime 0ms Memory 12.6mb
 
 Algorithm:
-Use a set for O(1) lookup.
+Use a set to track which positive numbers we've already seen. Iterate through the array, and for each positive number that hasn't been seen, add it to the set and add it to the running sum. If no unique positive numbers were found, return the maximum value in the array (handles all negative/zero case).
 
 Time Complexity: O(n)
 Space Complexity: O(n)

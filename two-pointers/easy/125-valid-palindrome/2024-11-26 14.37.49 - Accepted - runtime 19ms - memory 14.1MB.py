@@ -2,7 +2,7 @@
 LeetCode: 2024 11 26 14.37.49 Accepted Runtime 19ms Memory 14.1mb
 
 Algorithm:
-Continue until condition is met.
+Two-pass two pointers: first pass builds cleaned string with only alphanumeric characters (lowercased). Second pass uses two pointers (L, R) comparing characters from both ends. If characters differ, return False. If all match, return True. This handles case-insensitive comparison and ignores non-alphanumeric characters.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

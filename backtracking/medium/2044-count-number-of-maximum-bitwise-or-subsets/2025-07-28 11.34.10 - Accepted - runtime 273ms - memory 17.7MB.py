@@ -2,7 +2,7 @@
 LeetCode: 2025 07 28 11.34.10 Accepted Runtime 273ms Memory 17.7MB
 
 Algorithm:
-Sort the input first. Use a recursive helper function to explore all possibilities.
+First find the maximum possible OR by ORing all numbers. Sort numbers in descending order for pruning. Use backtracking: for each number, try including or excluding it. Prune branches where current OR combined with maxOr can't equal maxOr. When we've processed all numbers, if current OR equals maxOr, increment count. Return the count of subsets achieving maximum OR.
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)

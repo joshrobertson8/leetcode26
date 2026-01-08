@@ -2,7 +2,7 @@
 LeetCode: 2024 11 20 13.04.50 Accepted Runtime 0ms Memory 11.4mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Use set to detect cycles. Helper function computes sum of squares of digits. While output != 1 and not seen before, add to set and compute next number. If we reach 1, return True. If we see a number again (cycle), return False.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

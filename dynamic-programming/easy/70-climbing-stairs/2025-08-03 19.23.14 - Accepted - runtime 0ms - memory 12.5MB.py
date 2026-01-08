@@ -2,7 +2,7 @@
 LeetCode: 2025 08 03 19.23.14 Accepted Runtime 0ms Memory 12.5MB
 
 Algorithm:
-Iterate through each index.
+Dynamic programming: dp[i] represents ways to reach step i. Base cases: dp[0] = 1, dp[1] = 2. For each step i >= 2, dp[i] = dp[i-1] + dp[i-2] (can come from step i-1 with 1 step, or step i-2 with 2 steps). Return dp[n-1].
 
 Time Complexity: O(n)
 Space Complexity: O(1)

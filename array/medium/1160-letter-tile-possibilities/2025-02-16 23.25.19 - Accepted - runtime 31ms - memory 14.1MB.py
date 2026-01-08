@@ -2,7 +2,7 @@
 LeetCode: 2025 02 16 23.25.19 Accepted Runtime 31ms Memory 14.1mb
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Generate all possible permutations of tiles for lengths from 1 to len(tiles). Use itertools.permutations to generate each permutation. Store all unique permutations in a set to avoid duplicates. Return the size of the set, which represents the number of distinct tile sequences possible.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

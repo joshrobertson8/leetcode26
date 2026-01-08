@@ -2,7 +2,7 @@
 LeetCode: 2025 01 09 10.55.48 Accepted Runtime 51ms Memory 18.7mb
 
 Algorithm:
-Iterate through each index.
+Greedy: track tank (current gas) and total (overall gas balance). For each station, update tank and total with gas[i] - cost[i]. If tank becomes negative, reset tank to 0 and set index to i+1 (can't start from previous index). If total >= 0 at end, return index (valid starting point), else return -1.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

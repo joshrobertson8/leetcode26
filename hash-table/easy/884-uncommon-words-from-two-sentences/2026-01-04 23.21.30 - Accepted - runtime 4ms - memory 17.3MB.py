@@ -2,7 +2,7 @@
 LeetCode: 2026 01 04 23.21.30 Accepted Runtime 4ms Memory 17.3MB
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Split both sentences into words. Build frequency map counting occurrences of each word across both sentences. Return all words that appear exactly once (frequency == 1). These are words that appear in only one sentence and only once.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

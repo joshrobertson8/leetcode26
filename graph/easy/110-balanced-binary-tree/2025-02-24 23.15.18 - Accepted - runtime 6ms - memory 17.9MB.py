@@ -2,7 +2,7 @@
 LeetCode: 2025 02 24 23.15.18 Accepted Runtime 6ms Memory 17.9MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Recursive DFS with early termination: compute height of each subtree. If any subtree is unbalanced (returns -1), propagate -1 upward. If heights differ by more than 1, return -1. Otherwise return height (1 + max of left/right). Tree is balanced if final result is not -1.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

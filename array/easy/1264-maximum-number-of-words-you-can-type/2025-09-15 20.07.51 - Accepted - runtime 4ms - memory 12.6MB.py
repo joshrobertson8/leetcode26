@@ -2,7 +2,7 @@
 LeetCode: 2025 09 15 20.07.51 Accepted Runtime 4ms Memory 12.6mb
 
 Algorithm:
-Use a set for O(1) lookup.
+Convert brokenLetters to a set for O(1) lookup. Split the text into words. For each word, check if any character is in the broken set. If found, increment the count of untypeable words. Return the total words minus untypeable words.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

@@ -2,7 +2,7 @@
 LeetCode: 2024 11 09 20.39.09 Accepted Runtime 4ms Memory 12.1mb
 
 Algorithm:
-Use nested loops to check all pairs.
+Create a new result array. Iterate through the original array: for each zero, append two zeros to the result; for each non-zero, append it once. Then copy the first len(arr) elements from the result back into the original array. This handles the duplication in-place by using a temporary array.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

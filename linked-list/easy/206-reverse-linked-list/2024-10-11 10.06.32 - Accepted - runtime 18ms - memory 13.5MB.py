@@ -2,7 +2,7 @@
 LeetCode: 2024 10 11 10.06.32 Accepted Runtime 18ms Memory 13.5MB
 
 Algorithm:
-Iterate until condition is met.
+Iterative reversal: handle empty list first. Maintain prev (None initially) and current (head). For each node, save next node, point current.next to prev, move prev to current, move current to next. After loop, prev is the new head.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

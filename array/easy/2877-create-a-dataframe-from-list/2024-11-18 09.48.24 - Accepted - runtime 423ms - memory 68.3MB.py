@@ -2,7 +2,7 @@
 LeetCode: 2024 11 18 09.48.24 Accepted Runtime 423ms Memory 68.3MB
 
 Algorithm:
-Process the input directly.
+Use pandas DataFrame constructor to create a dataframe from the student_data list. Specify column names as "student_id" and "age". The DataFrame constructor automatically converts the list of lists into a structured dataframe.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

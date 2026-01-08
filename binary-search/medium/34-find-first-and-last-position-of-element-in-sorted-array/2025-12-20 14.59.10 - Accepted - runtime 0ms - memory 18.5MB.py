@@ -2,7 +2,7 @@
 LeetCode: 2025 12 20 14.59.10 Accepted Runtime 0ms Memory 18.5MB
 
 Algorithm:
-Continue until condition is met.
+Use two pointers starting from both ends. If target is not in nums, return [-1, -1]. Move left pointer right while nums[l] < target. Move right pointer left while nums[r] > target. When both pointers stop moving, they point to the first and last occurrence of target. Return [l, r].
 
 Time Complexity: O(n)
 Space Complexity: O(1)

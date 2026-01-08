@@ -2,7 +2,7 @@
 LeetCode: 2024 11 25 12.05.54 Accepted Runtime 0ms Memory 11.8mb
 
 Algorithm:
-Use two pointers moving toward each other.
+Binary search on range [1, num]. For each mid, calculate square = mid * mid. If square == num, return True. If square > num, search left half. Otherwise search right half. If loop completes without finding, return False.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

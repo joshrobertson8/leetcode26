@@ -2,7 +2,7 @@
 LeetCode: 2025 02 20 00.21.24 Accepted Runtime 4ms Memory 44.5MB
 
 Algorithm:
-TODO: Describe your approach here
+Two-pass hash map using Java: first pass stores each number and its index in HashMap. Second pass, for each number, check if complement exists in map and index differs from current index. Return the two indices. O(n) time with two passes.
 
 Time Complexity: O(?)
 Space Complexity: O(?)

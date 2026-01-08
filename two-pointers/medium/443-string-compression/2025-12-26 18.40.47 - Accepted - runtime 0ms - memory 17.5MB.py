@@ -2,7 +2,7 @@
 LeetCode: 2025 12 26 18.40.47 Accepted Runtime 0ms Memory 17.5MB
 
 Algorithm:
-Iterate through the array once.
+Two pointers: i scans through array, base tracks write position. For each character group: count consecutive occurrences, write character to chars[base], increment base. If count > 1, write each digit of count as character. Return base (new length). This compresses array in-place by replacing consecutive characters with character and count.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

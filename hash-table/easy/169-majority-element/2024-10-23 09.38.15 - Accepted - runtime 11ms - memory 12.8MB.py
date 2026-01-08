@@ -2,7 +2,7 @@
 LeetCode: 2024 10 23 09.38.15 Accepted Runtime 11ms Memory 12.8mb
 
 Algorithm:
-Use a hash map to track seen values.
+Build frequency map counting occurrences. Track majority threshold (len(nums) // 2). As we count, if any number's frequency exceeds majority threshold, return it immediately. This early termination optimizes the hash map approach.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

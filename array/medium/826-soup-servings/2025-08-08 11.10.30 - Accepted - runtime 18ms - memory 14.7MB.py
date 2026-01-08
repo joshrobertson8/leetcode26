@@ -2,7 +2,7 @@
 LeetCode: 2025 08 08 11.10.30 Accepted Runtime 18ms Memory 14.7mb
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Use memoized DFS. Convert n to units (divide by 25, rounding up). If n >= 4800, return 1.0 (probability approaches 1). For each state (soupA, soupB), if both are empty, return 0.5 (equal probability). If only A is empty, return 1.0. If only B is empty, return 0.0. Otherwise, recursively compute the average probability of the four possible moves: (4,0), (3,1), (2,2), (1,3). Memoize results to avoid recomputation.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

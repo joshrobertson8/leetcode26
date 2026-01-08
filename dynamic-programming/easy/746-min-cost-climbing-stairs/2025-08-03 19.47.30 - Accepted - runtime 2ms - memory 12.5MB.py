@@ -2,7 +2,7 @@
 LeetCode: 2025 08 03 19.47.30 Accepted Runtime 2ms Memory 12.5MB
 
 Algorithm:
-Iterate through each index.
+Dynamic programming: dp[i] represents minimum cost to reach step i. For each step i >= 2, dp[i] = min(dp[i-1] + cost[i-1], dp[i-2] + cost[i-2]) (minimum cost from previous two steps). Return dp[len(cost)] (top of stairs).
 
 Time Complexity: O(n)
 Space Complexity: O(1)

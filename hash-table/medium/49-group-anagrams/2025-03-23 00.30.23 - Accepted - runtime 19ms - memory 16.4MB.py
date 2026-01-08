@@ -2,7 +2,7 @@
 LeetCode: 2025 03 23 00.30.23 Accepted Runtime 19ms Memory 16.4mb
 
 Algorithm:
-Sort the input first.
+For each word, sort its characters to create a canonical form. Use sorted word as key in hash map. Group words with the same sorted form together. Anagrams will have the same sorted form. Return list of all groups (values of the map).
 
 Time Complexity: O(n log n)
 Space Complexity: O(n)

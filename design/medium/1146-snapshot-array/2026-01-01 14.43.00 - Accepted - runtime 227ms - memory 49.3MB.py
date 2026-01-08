@@ -2,7 +2,7 @@
 LeetCode: 2026 01 01 14.43.00 Accepted Runtime 227ms Memory 49.3MB
 
 Algorithm:
-Use two pointers moving toward each other.
+For each index, maintain a list of [snap_id, value] pairs recording when values changed. set() appends the current snapId and value. snap() increments snapId. get() uses binary search to find the most recent snapshot <= snap_id for that index, returning the corresponding value. This efficiently stores only changes, not full array copies.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

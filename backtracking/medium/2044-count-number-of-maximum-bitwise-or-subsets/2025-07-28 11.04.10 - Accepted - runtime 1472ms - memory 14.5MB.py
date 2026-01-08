@@ -2,7 +2,7 @@
 LeetCode: 2025 07 28 11.04.10 Accepted Runtime 1472ms Memory 14.5MB
 
 Algorithm:
-Use nested loops to check all pairs.
+Generate all possible subsets using bit manipulation. For each subset (represented as a bitmask from 1 to 2^n-1), compute the OR of all numbers in that subset. Track the maximum OR value seen and count how many subsets achieve it. For each subset, iterate through bits to determine which numbers to include, then compute their OR.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

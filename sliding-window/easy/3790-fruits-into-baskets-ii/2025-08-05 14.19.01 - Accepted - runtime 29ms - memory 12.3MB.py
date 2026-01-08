@@ -2,7 +2,7 @@
 LeetCode: 2025 08 05 14.19.01 Accepted Runtime 29ms Memory 12.3mb
 
 Algorithm:
-Use nested loops to check all pairs.
+Greedy matching: for each fruit, try to place it in the first basket that can fit it (fruit <= baskets[j]). If placed successfully, mark basket as used (set to 0) and break. If no basket can fit the fruit, increment unplaced count. This minimizes unplaced fruits by always trying to place each fruit.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

@@ -2,7 +2,7 @@
 LeetCode: 2025 12 21 16.54.29 Accepted Runtime 19ms Memory 18.3MB
 
 Algorithm:
-Iterate backwards through the array.
+Work backwards: start from the last index (end). For each position i, if nums[i] >= end - i (can reach end from i), update end to i. If we can reach end from position i, then i becomes the new target. Finally check if end == 0 (can reach last index from start).
 
 Time Complexity: O(n)
 Space Complexity: O(1)

@@ -2,7 +2,7 @@
 LeetCode: 2024 11 25 20.41.12 Accepted Runtime 2ms Memory 16.1MB
 
 Algorithm:
-Use two pointers moving toward each other.
+Use prev to track last kept node. Traverse m nodes (keep them), then skip n nodes (delete them). Repeat until end. For each cycle: traverse m nodes updating prev, then traverse n nodes without updating prev, then link prev.next to current. This deletes n nodes after every m nodes.
 
 Time Complexity: O(n^2)
 Space Complexity: O(1)

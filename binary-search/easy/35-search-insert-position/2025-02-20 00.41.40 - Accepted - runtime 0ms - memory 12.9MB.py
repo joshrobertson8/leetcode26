@@ -2,7 +2,7 @@
 LeetCode: 2025 02 20 00.41.40 Accepted Runtime 0ms Memory 12.9mb
 
 Algorithm:
-Two pointers technique. Sliding window technique.
+Binary search to find insertion position. If target is found, return its index. If nums[pivot] >= target, search left half (including pivot). Otherwise, search right half. When loop exits, left points to the insertion position (first position where element >= target).
 
 Time Complexity: O(n)
 Space Complexity: O(1)

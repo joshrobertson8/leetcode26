@@ -2,7 +2,7 @@
 LeetCode: 2024 11 02 21.19.56 Accepted Runtime 3ms Memory 9.6MB
 
 Algorithm:
-TODO: Describe your approach here
+One-pass hash table using C: implement custom hash table with chaining. As we iterate, for each number calculate complement. If complement found in hash table, return indices. Otherwise, insert current number and index. Uses hash function abs(key) % size for indexing. O(n) average time complexity.
 
 Time Complexity: O(?)
 Space Complexity: O(?)

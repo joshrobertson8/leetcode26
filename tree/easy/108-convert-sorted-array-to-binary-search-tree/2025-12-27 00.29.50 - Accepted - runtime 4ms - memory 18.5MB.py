@@ -2,7 +2,7 @@
 LeetCode: 2025 12 27 00.29.50 Accepted Runtime 4ms Memory 18.5MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Recursive builder: if left > right, return None (base case). Find middle index. Create root with nums[mid]. Recursively build left subtree from left to mid-1, right subtree from mid+1 to right. This creates balanced BST by always choosing middle element as root, ensuring height balance.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

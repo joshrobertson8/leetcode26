@@ -2,7 +2,7 @@
 LeetCode: 2025 08 05 17.40.17 Accepted Runtime 0ms Memory 13mb
 
 Algorithm:
-Iterate through each element with its index.
+One-pass hash map: as we iterate, for each number calculate the needed complement. If complement exists in hashmap, return [hashmap[complement], i]. Otherwise, store current number and its index in hashmap. This finds the pair in a single pass, more efficient than two-pass approach.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

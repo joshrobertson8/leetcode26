@@ -2,7 +2,7 @@
 LeetCode: 2024 11 17 18.12.44 Accepted Runtime 3ms Memory 12.3mb
 
 Algorithm:
-Use a hash map to track seen values. Use nested loops to check all pairs.
+Use a hash map to count occurrences of each number across all three arrays. For each array, increment the count for each number. After processing all arrays, return all numbers that appear exactly 3 times (meaning they're in all three arrays).
 
 Time Complexity: O(n)
 Space Complexity: O(n)

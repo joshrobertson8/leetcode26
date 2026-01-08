@@ -2,7 +2,7 @@
 LeetCode: 2025 07 10 14.25.23 Accepted Runtime 0ms Memory 12.3MB
 
 Algorithm:
-Two pointers approach.
+Recursive inorder traversal: if root is None, return. Recursively traverse left subtree, append root.val to result, then recursively traverse right subtree. This visits nodes in left-root-right order.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

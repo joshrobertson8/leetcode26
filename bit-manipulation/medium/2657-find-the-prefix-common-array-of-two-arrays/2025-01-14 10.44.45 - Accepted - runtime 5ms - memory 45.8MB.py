@@ -2,7 +2,7 @@
 LeetCode: 2025 01 14 10.44.45 Accepted Runtime 5ms Memory 45.8MB
 
 Algorithm:
-TODO: Describe your approach here
+Maintain two sets tracking elements seen so far in A and B. For each index i, if A[i] equals B[i], increment count. Otherwise, add A[i] to a_vals and B[i] to b_vals. If A[i] is already in b_vals, increment count. If B[i] is already in a_vals, increment count. Store count at each position in result array. This counts common elements up to each prefix.
 
 Time Complexity: O(?)
 Space Complexity: O(?)

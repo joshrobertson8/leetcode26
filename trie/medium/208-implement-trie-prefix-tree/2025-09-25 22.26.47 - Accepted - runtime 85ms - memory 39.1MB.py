@@ -1,3 +1,12 @@
+"""
+LeetCode: 2025 09 25 22.26.47 Accepted Runtime 85ms Memory 39.1MB
+
+Algorithm:
+Trie data structure: TrieNode has children dictionary and finished flag. insert() traverses/creates path character by character, marks end with finished=True. search() traverses path, returns True only if finished=True at end. startsWith() traverses path, returns True if path exists (regardless of finished flag). This enables efficient prefix matching and word lookup.
+
+Time Complexity: O(m) for insert/search/startsWith where m is word/prefix length.
+Space Complexity: O(ALPHABET_SIZE * N * M) where N is number of words and M is average word length.
+"""
 class TrieNode(): 
     def __init__(self):
         self.children = {}

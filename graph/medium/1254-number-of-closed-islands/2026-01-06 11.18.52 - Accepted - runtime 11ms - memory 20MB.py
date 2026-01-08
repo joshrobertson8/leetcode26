@@ -2,7 +2,7 @@
 LeetCode: 2026 01 06 11.18.52 Accepted Runtime 11ms Memory 20MB
 
 Algorithm:
-DFS traversal.
+Two-pass DFS: first pass floods all border-connected 0s to 1s (not closed). Second pass counts remaining islands of 0s. For each remaining 0, start DFS to mark all connected 0s as 1s, incrementing closed island count. This identifies islands completely surrounded by 1s.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

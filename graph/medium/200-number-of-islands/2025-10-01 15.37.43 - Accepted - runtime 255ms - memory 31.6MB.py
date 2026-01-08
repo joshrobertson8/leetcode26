@@ -2,7 +2,7 @@
 LeetCode: 2025 10 01 15.37.43 Accepted Runtime 255ms Memory 31.6MB
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup. Stack-based approach. BFS using queue. DFS traversal.
+BFS traversal: iterate through each cell. When finding an unvisited '1', start BFS using a queue to mark all connected '1's as visited. BFS explores 4-directional neighbors that are '1' and unvisited. Each BFS call marks one island. Count the number of BFS starts.
 
 Time Complexity: O(n^2)
 Space Complexity: O(n)

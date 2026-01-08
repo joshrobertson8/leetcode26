@@ -2,7 +2,7 @@
 LeetCode: 2025 12 26 16.48.39 Accepted Runtime 150ms Memory 77.6MB
 
 Algorithm:
-Process the input directly.
+Use a doubly-linked list with sentinel nodes (left/right) and a hash map. Most recently used items are at the right end. get(): if key exists, remove node from list, insert at right end, return value. put(): if key exists, remove it. Create new node, insert at right end. If capacity exceeded, remove leftmost node (LRU) and delete from map. remove() and insert() maintain list structure.
 
 Time Complexity: O(1)
 Space Complexity: O(1)

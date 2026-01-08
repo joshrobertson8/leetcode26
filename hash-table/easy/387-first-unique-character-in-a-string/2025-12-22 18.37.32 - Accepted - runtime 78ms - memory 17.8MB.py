@@ -2,7 +2,7 @@
 LeetCode: 2025 12 22 18.37.32 Accepted Runtime 78ms Memory 17.8MB
 
 Algorithm:
-Use a hash table to store seen elements for O(1) lookup.
+Build frequency map counting character occurrences. Then iterate through string with enumerate. Return the index of the first character with frequency 1. If no unique character found, return -1.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

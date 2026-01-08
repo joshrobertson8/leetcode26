@@ -2,7 +2,7 @@
 LeetCode: 2024 11 05 00.50.30 Accepted Runtime 0ms Memory 11.6mb
 
 Algorithm:
-Sort the array first.
+Copy nums2 into the end of nums1 (starting at index m+i). Then sort the entire nums1 array. This merges both arrays by filling the extra space in nums1 with nums2, then sorting. Simple but O((m+n) log(m+n)) due to sorting.
 
 Time Complexity: O(n log n)
 Space Complexity: O(1)

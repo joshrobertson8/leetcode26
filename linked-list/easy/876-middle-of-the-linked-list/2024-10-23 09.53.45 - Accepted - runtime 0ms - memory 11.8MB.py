@@ -2,7 +2,7 @@
 LeetCode: 2024 10 23 09.53.45 Accepted Runtime 0ms Memory 11.8MB
 
 Algorithm:
-Use two pointers moving toward each other.
+Floyd's cycle detection (tortoise and hare): use slow and fast pointers both starting at head. Move slow one step, fast two steps. When fast reaches end, slow is at middle. For even length, slow points to second middle node.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

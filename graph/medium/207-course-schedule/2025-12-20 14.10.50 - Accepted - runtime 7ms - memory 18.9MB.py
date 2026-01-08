@@ -2,7 +2,7 @@
 LeetCode: 2025 12 20 14.10.50 Accepted Runtime 7ms Memory 18.9MB
 
 Algorithm:
-Use a set for O(1) lookup. Use a recursive helper function to explore all possibilities.
+Cycle detection using DFS: build adjacency list where graph[course] contains prerequisites. Use visited set (completed courses) and cycle set (currently processing). For each course, if visited, return True. If in cycle, return False (cycle detected). Add to cycle, recursively process prerequisites. If all prerequisites complete, remove from cycle and add to visited. Return True only if all courses can be completed without cycles.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

@@ -2,7 +2,7 @@
 LeetCode: 2025 08 03 00.05.27 Accepted Runtime 47ms Memory 57.3MB
 
 Algorithm:
-TODO: Describe your approach here
+Recursively compare two JSON objects. If they are identical, return empty object. If either is null or not an object, or if one is array and other is object, return [obj1, obj2]. Otherwise, iterate through keys in obj1. For each key that exists in obj2, recursively compute the difference of their values. If the sub-difference is non-empty, add it to the result object. Return the result object containing only keys with differences.
 
 Time Complexity: O(?)
 Space Complexity: O(?)

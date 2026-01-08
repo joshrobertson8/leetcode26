@@ -676,7 +676,7 @@ Space Complexity: O(?)
         
         solution_file.write_text(code, encoding="utf-8")
         
-        # Automatically analyze and update complexity and description
+        # Automatically analyze and update complexity
         try:
             # Import here to avoid circular dependencies
             import sys
@@ -687,9 +687,9 @@ Space Complexity: O(?)
                 analyzer_module = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(analyzer_module)
                 
-                time_comp, space_comp, description = analyzer_module.analyze_solution_file(solution_file)
+                time_comp, space_comp = analyzer_module.analyze_solution_file(solution_file)
                 if time_comp != "O(?)" or space_comp != "O(?)":
-                    analyzer_module.update_solution_file(solution_file, time_comp, space_comp, description)
+                    analyzer_module.update_solution_file(solution_file, time_comp, space_comp)
         except Exception:
             pass  # Don't fail if complexity analysis fails
         
@@ -903,9 +903,9 @@ def sync_solutions(client: LeetCodeClient, organizer: SolutionOrganizer,
                                             for py_file in prob_dir.glob("*.py"):
                                                 if date_str in py_file.name:
                                                     # Update this file
-                                                    time_comp, space_comp, description = analyzer_module.analyze_solution_file(py_file)
+                                                    time_comp, space_comp = analyzer_module.analyze_solution_file(py_file)
                                                     if time_comp != "O(?)" or space_comp != "O(?)":
-                                                        analyzer_module.update_solution_file(py_file, time_comp, space_comp, description)
+                                                        analyzer_module.update_solution_file(py_file, time_comp, space_comp)
                                                         updated = True
                                                     break
                         except Exception:

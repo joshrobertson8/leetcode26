@@ -2,7 +2,7 @@
 LeetCode: 2025 01 14 10.18.17 Accepted Runtime 11ms Memory 12.5mb
 
 Algorithm:
-Build prefix array.
+Maintain two sets and a count. For each index i, if A[i] equals B[i], increment count. Otherwise, add A[i] to a_vals and B[i] to b_vals. If A[i] is already in b_vals, increment count. If B[i] is already in a_vals, increment count. This optimizes by checking matches immediately and tracking cross-set matches.
 
 Time Complexity: O(n)
 Space Complexity: O(1)

@@ -2,7 +2,7 @@
 LeetCode: 2025 09 25 20.18.38 Accepted Runtime 3ms Memory 12.5MB
 
 Algorithm:
-Use a recursive helper function to explore all possibilities.
+Backtracking: build permutations by trying each number that hasn't been used yet. For each position, try adding an unused number to the current path, recursively build the rest, then backtrack by removing it. When the path length equals the input length, we have a complete permutation. Use a list to track the current path and check membership to avoid duplicates.
 
 Time Complexity: O(n)
 Space Complexity: O(n)

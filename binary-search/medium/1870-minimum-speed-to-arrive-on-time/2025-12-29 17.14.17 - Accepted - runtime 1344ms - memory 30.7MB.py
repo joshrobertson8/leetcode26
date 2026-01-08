@@ -2,7 +2,7 @@
 LeetCode: 2025 12 29 17.14.17 Accepted Runtime 1344ms Memory 30.7MB
 
 Algorithm:
-Iterate through the array once.
+Binary search on the answer (train speed). First check if it's possible: if hour < n-1, return -1. Define canFinish(speed) that calculates total time: sum of ceil(dist[i]/speed) for first n-1 segments, plus dist[n-1]/speed for the last segment. Binary search between 1 and 10^7. If canFinish(mid), try slower speeds. Otherwise, try faster speeds. Return the minimum valid speed.
 
 Time Complexity: O(n)
 Space Complexity: O(1)
